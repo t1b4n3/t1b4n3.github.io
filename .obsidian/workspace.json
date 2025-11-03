@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-10-30-fsop.md",
+                "file": "_posts/2025-11-02-house-of-spirit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-30-fsop"
+              "title": "2025-11-02-house-of-spirit"
             }
           }
         ],
@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 200
   },
   "right": {
     "id": "d704ff5841882aa0",
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-10-30-fsop.md",
+                "file": "_posts/2025-11-10-fsop.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-10-30-fsop"
+              "title": "Outline of 2025-11-10-fsop"
             }
           }
         ],
@@ -157,7 +157,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -170,8 +171,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6676fa631e0b54d4",
+  "active": "1893755859ec0252",
   "lastOpenFiles": [
+    "_posts/2025-10-27-house-of-botcake.md",
+    "_posts/2025-11-02-house-of-spirit.md",
+    "_posts/2025-11-03-off-by-one.md",
+    "_posts/2025-11-10-fsop.md",
+    "_posts/2025-11-10-house-of-einherjar.md",
+    "_tabs/about.md",
+    "_tabs/projects.md",
     "_site/assets/img/favicons/web-app-manifest-512x512.png",
     "_site/assets/img/favicons/web-app-manifest-192x192.png",
     "_site/assets/img/favicons/favicon.svg",
@@ -187,7 +195,6 @@
     "_includes/head.html",
     "_includes",
     "_site/assets/images/favicons/web-app-manifest-512x512.png",
-    "_site/assets/images/favicons/web-app-manifest-192x192.png",
     "_site/assets/images/favicons/site.webmanifest",
     "_site/assets/images/favicons/favicon.zip",
     "assets/images/favicons/site.webmanifest",
@@ -211,12 +218,6 @@
     "_site/notes/Roadmap.md",
     "_site/assets/images/pwn/tcache/Untitled.md",
     "_site/assets.md",
-    "_posts/2025-10-27-house-of-botcake.md",
-    "_notes/binexp/heap/house of botcake.md",
-    "_notes/binexp/heap/Use-after-free.md",
-    "_notes/binexp/heap/Unlink_Attack.md",
-    "_notes/binexp/heap/Tcache.md",
-    "_notes/binexp/heap/Metadata_Corruption.md",
-    "_notes/binexp/heap/House-of-mind.md"
+    "_notes/binexp/heap/house of botcake.md"
   ]
 }

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ====== CONFIGURE THESE ======
-REPO="https://github.com/tibane0/tibane0.github.io.git"
+REPO="https://github.com/t1b4n3/t1b4n3.github.io.git"   # ✅ updated
 BRANCH="gh-pages"
 BUILD_DIR="_site"
 COMMIT_MSG="Deploying notes and blog updates: $(date +'%Y-%m-%d %H:%M:%S')"
@@ -12,7 +12,7 @@ set -e
 
 echo "📝 Committing content to main branch..."
 git add .
-git commit -m "update"
+git commit -m "update" || echo "🟡 Nothing to commit on main"
 git push origin main
 
 echo "📦 Building site with Jekyll..."

@@ -102,6 +102,7 @@ order: 2
       <p><code>$ what-do-i-do</code></p>
       <p>&gt; Exploit Development</p>
        <p>&gt; Reverse Engineering</p>
+	  <p>&gt; Systems Development</p>
     </div>
   </div>
 
@@ -111,7 +112,7 @@ order: 2
   <div class="profile-right">
     Hello 
 
-    I'm Nkateko,a, cybersecurity enthusiast focused on low-level exploit development.
+    I'm Nkateko,a, cybersecurity enthusiast focused on low-level exploit and systems development.
     <p>
     This blog is where i will post CTF writeups and real world research that i do. 
     </p>
