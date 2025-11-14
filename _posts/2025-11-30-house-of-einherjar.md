@@ -6,7 +6,6 @@ date: 2025-11-30
 categories:
   - Guide
   - heap-exploitation
-  - pwn
 tags:
   - heap-exploitation
 ---

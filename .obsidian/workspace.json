@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_tabs/projects.md",
+                "file": "_posts/2025-12-30-debugging_and_exploiting multi-threaded applications..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "projects"
+              "title": "2025-12-30-debugging_and_exploiting multi-threaded applications."
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_tabs/projects.md",
+                "file": "_posts/2025-12-30-debugging_and_exploiting multi-threaded applications..md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of projects"
+              "title": "Outline of 2025-12-30-debugging_and_exploiting multi-threaded applications."
             }
           }
         ],
@@ -172,6 +172,28 @@
   },
   "active": "ce10120cb4c4a1d6",
   "lastOpenFiles": [
+    "_posts/2025-12-25-fuzzing.md",
+    "_posts/2025-12-20-file-structure-exploitaton.md",
+    "_posts/2025-12-15-type-confusion.md",
+    "_posts/2025-12-10-ssrf.md",
+    "_posts/2025-11-30-house-of-einherjar.md",
+    "_posts/2025-11-12-house-of-force.md",
+    "_posts/2025-11-03-off-by-one.md",
+    "_posts/2025-11-02-house-of-spirit.md",
+    "_posts/2025-10-27-house-of-botcake.md",
+    "_posts/2025-10-20-qnqsec-debtors-database.md",
+    "_posts/2025-10-13-srop.md",
+    "_posts/2025-10-10-UDA.md",
+    "_posts/2025-10-05-Fastbin-dup.md",
+    "_posts/2025-09-27-information-leaks.md",
+    "_posts/2025-09-26-ret2gets.md",
+    "_posts/2025-09-25-tcache-poisioning.md",
+    "_posts/2025-09-07-unlink-exploit.md",
+    "_posts/2025-07-28-Global_varibale_overwrite.md",
+    "_posts/2025-07-21-Pwn-Environment-Lab.md",
+    "_posts/2025-04-28-Gambling.md",
+    "_posts/2025-04-23-Protostar-Stack.md",
+    "_tabs/projects.md",
     "_site/assets/images/pwntrace.png",
     "assets/images/pwntrace.png",
     "_posts/2025-12-30-debugging_and_exploiting multi-threaded applications..md",
@@ -188,19 +210,6 @@
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
     "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
     "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
-    "_site/notes/programming/dsa/Data Structures/Stack.md",
-    "_site/notes/programming/dsa/Data Structures/Binary Tree.md",
-    "_site/notes/programming/dsa/Data Structures/Binary Search Tree.md",
-    "_site/notes/programming/dsa/Algorithms/Sorting Algorithms.md",
-    "_site/notes/programming/dsa/Algorithms/Searching Algorithms.md",
-    "_site/notes/binexp/stack/ROP/ret2gets.md",
-    "_site/notes/binexp/stack/ROP/ret2dlresolve.md",
-    "_site/notes/programming/kernel/Tools.md",
-    "_site/notes/programming/kernel/Introduction.md",
-    "_site/notes/programming/asm/Arrays.md",
-    "_site/notes/binexp/stack/Integer Overflow and Underflow.md",
-    "_site/notes/red-teaming/Reconnaissance.md",
-    "_site/notes/Roadmap.md",
     "_site/assets/img/web-app-manifest-512x512.png",
     "_site/assets/img/web-app-manifest-192x192.png",
     "_site/assets/img/favicon.svg",
@@ -208,15 +217,6 @@
     "_site/assets/img/apple-touch-icon.png",
     "_site/assets/images/writeups/qnqsec/write.png",
     "_site/assets/images/writeups/qnqsec/shell.png",
-    "_site/assets/images/writeups/qnqsec/offset9.png",
-    "_site/assets/images/writeups/qnqsec/offset3.png",
-    "_site/assets/images/pwn/tcache/Untitled.md",
-    "_site/assets.md",
-    "_tabs/projects.md",
-    "_tabs/about.md",
-    "_tabs/archives.md",
-    "_tabs/tags.md",
-    "_posts/2025-11-30-house-of-einherjar.md",
-    "_posts/2026-01-02-race-conditions.md"
+    "_site/assets/images/writeups/qnqsec/offset9.png"
   ]
 }
