@@ -4,7 +4,7 @@ title: House of Botcake
 description:
 date: 2025-10-27
 categories:
-  - notes
+  - Guide
   - heap-exploitation
 tags:
   - house-of-botcake

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Information Disclosure
+title: Info leaks in software exploitation.
 description:
 date: 2025-09-27
 categories:
-  - notes
+  - Guide
   - info-leaks
 tags:
   - info-leak
@@ -12,19 +12,34 @@ tags:
 # Information/Memory Leaks In Binary Exploitation
 
 ## What is a memory leak?
-A **information/memory leak** is any primitive in a binary that reveals bytes from the program's memory such as addresses, pointers, strings and even metadata. Information leaks help bypass security mitigations such as Address Space Layout Randomiation (ASLR), Position Independent Executable (PIE), etc. by giving you an pointer that you can use to compute a base address such libc, PIE, heap, etc. base addresses
-
+A **information/memory leak** is any primitive in a binary that reveals bytes from the program's memory such as addresses, pointers, strings and even metadata. Information leaks help bypass security mitigations such as Address Space Layout Randomization (ASLR), Position Independent Executable (PIE), etc. by giving you an pointer that you can use to compute a base address such `libc`, PIE, heap, etc. base addresses
 ## Why do they matter?
 
 - The can be used to bypass exploit mitigations that depend on randomization such as ASLR or stack canaries.
 - They can disclose information meant to be secrets in memory.
+- Info leaks are needed for reliable exploit development.
+
 
 ## Common leak Primitives
 
 ### Uninitialized Data Access (UDA)
 
 When a program uses a local variable that has not been explicitly initialized, it may contain data left over from previous stack frames. If this initialized variable is used and printed to the user, it can leak information like memory addresses or user data.
+
+### Partial Overwrites.
+
+I can't really say that this is a info leak but it is also useful when you only know the least significant bits of a address. 
+
+Overwrite the target partially (LSB), leaving only some original bytes. Heap/stack spraying may be needed.
+
+```
+```
+
 ### Format String Read
+
+### Stack/Heap Over-read
+
+### Out-Of-Bounds Read
 
 ### Return Oriented Programming (ROP)
 
@@ -178,8 +193,6 @@ Example
 ```
 
 
-### Stack/Heap Over-read
-- 
+### Type Confusion.
 
-### Out-Of-Bounds Read
-- 
+Replace a freed object memory chunk with a different object type of same size.

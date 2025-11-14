@@ -4,7 +4,7 @@ title: Tcache Poisioning
 description:
 date: 2025-09-25
 categories:
-  - notes
+  - Guide
   - heap-exploitation
 tags:
   - tcache

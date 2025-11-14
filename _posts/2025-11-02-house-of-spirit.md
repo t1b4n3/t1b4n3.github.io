@@ -4,7 +4,7 @@ title: House of Spirit
 description:
 date: 2025-11-02
 categories:
-  - notes
+  - Guide
   - heap-exploitation
   - pwn
 tags:
