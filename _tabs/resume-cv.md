@@ -7,7 +7,7 @@ order: 4
 ---
 ## Contact 
 
-- [Blog](http://t1b4n3.github.io/) 
+- [Blog](https://t1b4n3.github.io/) 
 - [Github](https://github.com/t1b4n3)
 - [LinkedIn](https://www.linkedin.com/in/nkatekotibane/)
 - [X](https://x.com/t1b4n3)
