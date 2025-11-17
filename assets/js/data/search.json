@@ -1,0 +1,148 @@
+[
+  {
+    "title": "Devlog #1: Introducing pwntrace | building a syscall tracer from scratch",
+    "url": "/post/pwntrace/",
+    "categories": "devlog, pwntrace",
+    "tags": "devlog, pwntrace",
+    "date": "2025-11-17 00:00:00 +0200",
+    "content": "In this devlog, I introduce my project for tracing and manipulating linux system calls using ptrace. I explain my goals and planned features of the tool."
+  },
+  {
+    "title": "Large Bin attack",
+    "url": "/post/large-bin-attack/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "large-bin, heap",
+    "date": "2025-11-15 00:00:00 +0200",
+    "content": "Explanation of large bin attack"
+  },
+  {
+    "title": "House of Force",
+    "url": "/post/house-of-force/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "",
+    "date": "2025-11-12 00:00:00 +0200",
+    "content": "House of Force  This is a older exploitation technique that works on glibc 2.27 and lower.  The goal of the house of force is to get malloc() to return a arbitrary value/address by overwriting the ..."
+  },
+  {
+    "title": "Off-by-one overflow",
+    "url": "/post/off-by-one/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "off-by-one, poison-null-byte, off-by-null, heap-exploitation, pwn",
+    "date": "2025-11-03 00:00:00 +0200",
+    "content": "Explanation on how off-by-one vulnerability on the heap can lead to RCE"
+  },
+  {
+    "title": "House of Spirit",
+    "url": "/post/house-of-spirit/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "pwn, house-of-spirit",
+    "date": "2025-11-02 00:00:00 +0200",
+    "content": "House of spirit attack allows us to get malloc to return a fake chunk to a region we have some control over (such as the bss or stack).  Goal  Add a attacker controlled buffer into the tcache/fastb..."
+  },
+  {
+    "title": "House of Botcake",
+    "url": "/post/house-of-botcake/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "house-of-botcake, tcach-poisioning, tcache",
+    "date": "2025-10-27 00:00:00 +0200",
+    "content": "Steps     Allocate 10 chunks.            7 chunk to fill tcache bins       chunk 8 will be used later for later consolidation       chunk 9 is the victim chunk       chunk 10 is to prevent consolid..."
+  },
+  {
+    "title": "QNQSEC Debtor's Database Writeup",
+    "url": "/post/qnqsec-debtors-database/",
+    "categories": "writeup, pwn",
+    "tags": "stack-canary, stack-overflow",
+    "date": "2025-10-20 00:00:00 +0200",
+    "content": "About The binary    The binary is dynamically linked, and has all security mitigations turned on. Reversing main  int main() { 	void* fsbase 	int64_t canary = *(fsbase + 0x28) 	setup() 	puts(&quot;What ..."
+  },
+  {
+    "title": "Sigreturn Oriented Programming",
+    "url": "/post/srop/",
+    "categories": "Guide, rop",
+    "tags": "srop",
+    "date": "2025-10-13 00:00:00 +0200",
+    "content": "Sigreturn Oriented Programming.  SROP (Sigreturn Oriented Programming) is binary exploitation technique that leverages the signal handling mechanisms in POSIX systems to gain control over CPU regis..."
+  },
+  {
+    "title": "Uninitialized Data Access",
+    "url": "/post/UDA/",
+    "categories": "Guide, uda",
+    "tags": "uda",
+    "date": "2025-10-10 00:00:00 +0200",
+    "content": "Overview  So what are Uninitialized variables? Uninitialized variables are variables that are declared byt they are not assigned a value  e.g.  #include &amp;lt;stdio.h&amp;gt;  // complile : gcc vuln.c -o..."
+  },
+  {
+    "title": "Fastbin Exploitation",
+    "url": "/post/Fastbin-dup/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "fastbin-dup, fastbin, heap-exploitation",
+    "date": "2025-10-05 00:00:00 +0200",
+    "content": "Explanation of the `fastbin dup` heap exploitation technique"
+  },
+  {
+    "title": "Info leaks in software exploitation.",
+    "url": "/post/information-leaks/",
+    "categories": "Guide, info-leaks",
+    "tags": "info-leak",
+    "date": "2025-09-27 00:00:00 +0200",
+    "content": "Information/Memory Leaks In Binary Exploitation  What is a memory leak? A information/memory leak is any primitive in a binary that reveals bytes from the program’s memory such as addresses, pointe..."
+  },
+  {
+    "title": "Who Needs POP `RDI?` You Have `gets()`",
+    "url": "/post/ret2gets/",
+    "categories": "Guide, ROP",
+    "tags": "ret2gets",
+    "date": "2025-09-26 00:00:00 +0200",
+    "content": "Facing a gadget-poor binary? This post reveals how gets() can be your ultimate ROP primitive. By understanding how gets() reuses the existing RDI value from the vulnerable buffer, we can craft prec..."
+  },
+  {
+    "title": "Tcache Poisioning",
+    "url": "/post/tcache-poisioning/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "tcache, tcach-poisioning",
+    "date": "2025-09-25 00:00:00 +0200",
+    "content": "Understanding Tcache  Thread Local Caching (Tcache) is a set of bins, organised as singly-linked lists, that are local to each thread. Tcache was made to avoid the need to lock a global arena for f..."
+  },
+  {
+    "title": "Unlink Exploit",
+    "url": "/post/unlink-exploit/",
+    "categories": "Guide, heap-exploitation",
+    "tags": "unlink-exploit",
+    "date": "2025-09-07 00:00:00 +0200",
+    "content": "Understanding how unlinking happens in libc (old and modern)  and how to exploit it"
+  },
+  {
+    "title": "Global Variable Overwrite",
+    "url": "/post/Global_varibale_overwrite/",
+    "categories": "writeup, pwn",
+    "tags": "stack",
+    "date": "2025-07-28 00:00:00 +0200",
+    "content": "Exploit Write-up: Buffer Overflow with Global Variable Control  Challenge  Overview  In this challenge, we are given a C program that contains a buffer overflow vulnerability in the func() function..."
+  },
+  {
+    "title": " Pwn & Reverse Engineering Lab with Docker",
+    "url": "/post/Pwn-Environment-Lab/",
+    "categories": "pwn",
+    "tags": "pwn-env",
+    "date": "2025-07-23 00:00:00 +0200",
+    "content": "Building a Reproducible Pwn &amp;amp; Reverse Engineering Lab with Docker  Spinning up a reliable workspace for reverse engineering and binary exploitation on modern machines can be tricky. Old challen..."
+  },
+  {
+    "title": "UMDCTF",
+    "url": "/post/Gambling/",
+    "categories": "writeup, pwn",
+    "tags": "gambling",
+    "date": "2025-04-28 00:00:00 +0200",
+    "content": "UMDCTF Gambling pwn challenge    About binary  pwn checksec gambling [*] &#39;/home/hacker/REPO/binexp/comp/umdctf/gambling/gambling&#39;     Arch:     i386-32-little     RELRO:    Partial RELRO     Stack:..."
+  },
+  {
+    "title": "Protostar Stack Writeups",
+    "url": "/post/Protostar-Stack/",
+    "categories": "writeup, pwn",
+    "tags": "protostar-stack",
+    "date": "2025-04-23 00:00:00 +0200",
+    "content": "Protostar Stack Writeups  Stack 0  GOAL : Modify a variable  0x08048405 &amp;lt;+17&amp;gt;:	lea    eax,[esp+0x1c] 0x08048409 &amp;lt;+21&amp;gt;:	mov    DWORD PTR [esp],eax 0x0804840c &amp;lt;+24&amp;gt;:	call   0x804830..."
+  }
+  
+]
+

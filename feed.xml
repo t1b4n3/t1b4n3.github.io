@@ -1,0 +1,153 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://t1b4n3.github.io/</id>
+  <title>t1b4n3</title>
+  <subtitle>Portfolio and blog of an aspiring low-level vulnerability researcher and exploit developer. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.</subtitle>
+  <updated>2025-11-17T19:45:08+02:00</updated>
+  <author>
+    <name>Nkateko Tibane</name>
+    <uri>https://t1b4n3.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://t1b4n3.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://t1b4n3.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Nkateko Tibane </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Devlog #1: Introducing pwntrace | building a syscall tracer from scratch</title>
+    <link href="https://t1b4n3.github.io/post/pwntrace/" rel="alternate" type="text/html" title="Devlog #1: Introducing pwntrace | building a syscall tracer from scratch" />
+    <published>2025-11-17T00:00:00+02:00</published>
+  
+    <updated>2025-11-17T00:00:00+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/pwntrace/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/pwntrace/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="devlog" />
+    
+    <category term="pwntrace" />
+    
+  
+
+  <summary>In this devlog, I introduce my project for tracing and manipulating linux system calls using ptrace. I explain my goals and planned features of the tool.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Large Bin attack</title>
+    <link href="https://t1b4n3.github.io/post/large-bin-attack/" rel="alternate" type="text/html" title="Large Bin attack" />
+    <published>2025-11-15T00:00:00+02:00</published>
+  
+    <updated>2025-11-15T00:00:00+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/large-bin-attack/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/large-bin-attack/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Guide" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>Explanation of large bin attack</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>House of Force</title>
+    <link href="https://t1b4n3.github.io/post/house-of-force/" rel="alternate" type="text/html" title="House of Force" />
+    <published>2025-11-12T00:00:00+02:00</published>
+  
+    <updated>2025-11-12T00:00:00+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/house-of-force/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/house-of-force/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Guide" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>House of Force  This is a older exploitation technique that works on glibc 2.27 and lower.  The goal of the house of force is to get malloc() to return a arbitrary value/address by overwriting the top chunk. So what is the top chunk?  The top chunk (also known as the wilderness) is a special chunk, it is last in memory (highest address) for the given heap arena. It is not part of any free bins ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Off-by-one overflow</title>
+    <link href="https://t1b4n3.github.io/post/off-by-one/" rel="alternate" type="text/html" title="Off-by-one overflow" />
+    <published>2025-11-03T00:00:00+02:00</published>
+  
+    <updated>2025-11-14T19:35:23+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/off-by-one/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/off-by-one/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Guide" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>Explanation on how off-by-one vulnerability on the heap can lead to RCE</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>House of Spirit</title>
+    <link href="https://t1b4n3.github.io/post/house-of-spirit/" rel="alternate" type="text/html" title="House of Spirit" />
+    <published>2025-11-02T00:00:00+02:00</published>
+  
+    <updated>2025-11-14T19:35:23+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/house-of-spirit/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/house-of-spirit/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Guide" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>House of spirit attack allows us to get malloc to return a fake chunk to a region we have some control over (such as the bss or stack).  Goal  Add a attacker controlled buffer into the tcache/fastbin so it can be later allocated by malloc()  Obtain an arbitrary allocation primitive.  This technique requires a overflow or out of bounds write vulnerability in order to overwrite a pointer returned...</summary>
+
+  </entry>
+
+</feed>
+
+
