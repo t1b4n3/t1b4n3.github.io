@@ -2,7 +2,7 @@
 layout: post
 title: house-of-einherjar
 description:
-date: 2025-11-30
+date: 2026-01-30
 categories:
   - Guide
   - heap-exploitation

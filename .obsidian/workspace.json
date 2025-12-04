@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ce10120cb4c4a1d6",
+            "id": "953b5a25ba38497d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_tabs/resume-cv.md",
+                "file": "_tabs/resume.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "resume-cv"
+              "title": "resume"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-12-25-fuzzing.md",
+                "file": "_tabs/resume.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-12-25-fuzzing"
+              "title": "Outline of resume"
             }
           }
         ],
@@ -157,8 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,53 +170,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce10120cb4c4a1d6",
+  "active": "953b5a25ba38497d",
   "lastOpenFiles": [
-    "_tabs/archives.md",
-    "_tabs/resume-cv.md",
-    "_posts/2025-12-25-fuzzing.md",
-    "_posts/2025-12-20-file-structure-exploitaton.md",
-    "_posts/2025-12-15-type-confusion.md",
-    "_posts/2025-12-10-ssrf.md",
+    "_site/resume/index.html",
+    "_site/resume",
+    "_posts/2026-01-30-house-of-einherjar.md",
+    "_posts/2025-11-15-large-bin-attack.md",
+    "_posts/2025-11-17-pwntrace.md",
+    "_posts/2025-11-12-house-of-force.md",
+    "_posts/2026-02-14-symbolic-execution.md",
+    "_site/archives/index.html",
+    "_site/archives",
+    "_site/categories/index.html",
+    "_site/tags/index.html",
     "_site/resume-cv/index.html",
     "_site/resume-cv",
-    "_site/post/pwntrace/index.html",
-    "_site/post/pwntrace",
-    "_site/post/large-bin-attack/index.html",
-    "_site/post/large-bin-attack",
-    "_site/categories/pwntrace/index.html",
-    "_site/categories/pwntrace",
-    "_site/categories/devlog/index.html",
-    "_site/categories/devlog",
-    "_posts/2025-11-17-pwntrace.md",
-    "_posts/2025-11-15-large-bin-attack.md",
-    "_site/assets.md",
-    "_posts/2025-11-12-house-of-force.md",
-    "_posts/2025-11-03-off-by-one.md",
-    "_posts/2025-11-30-house-of-einherjar.md",
-    "_posts/2025-12-30-debugging_and_exploiting multi-threaded applications..md",
-    "assets.md",
-    "_posts/2026-01-02-race-conditions.md",
-    "_posts/2025-10-10-UDA.md",
-    "_posts/2025-10-05-Fastbin-dup.md",
+    "_site/projects/index.html",
+    "_site/projects",
+    "_site/about/index.html",
+    "_site/assets/img/favicons/mstile-150x150.png",
+    "_site/assets/img/favicons/favicon-32x32.png",
+    "_site/assets/img/favicons/favicon-16x16.png",
+    "_site/assets/img/favicons/android-chrome-512x512.png",
+    "_site/assets/img/favicons/android-chrome-192x192.png",
+    "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
+    "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
+    "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
+    "_site/notes/programming/dsa/Data Structures/Stack.md",
+    "_site/notes/programming/dsa/Data Structures/Binary Tree.md",
+    "_site/notes/programming/dsa/Data Structures/Binary Search Tree.md",
+    "_site/notes/programming/dsa/Algorithms/Searching Algorithms.md",
+    "_site/notes/programming/dsa/Algorithms/Sorting Algorithms.md",
+    "_site/notes/binexp/stack/ROP/ret2gets.md",
+    "_site/notes/binexp/stack/ROP/ret2dlresolve.md",
+    "_site/notes/programming/kernel/Tools.md",
+    "_site/notes/programming/kernel/Introduction.md",
+    "_site/notes/programming/asm/Arrays.md",
+    "_site/notes/binexp/stack/Integer Overflow and Underflow.md",
+    "_site/notes/red-teaming/Reconnaissance.md",
+    "_site/notes/Roadmap.md",
     "_site/assets/img/web-app-manifest-512x512.png",
     "_site/assets/img/web-app-manifest-192x192.png",
     "_site/assets/img/favicons/web-app-manifest-512x512.png",
     "_site/assets/img/favicons/web-app-manifest-192x192.png",
     "_site/assets/img/favicons/favicon.svg",
-    "_site/assets/img/favicons/favicon-96x96.png",
-    "_site/assets/img/favicon.svg",
-    "_site/assets/img/favicon-96x96.png",
-    "_site/assets/img/apple-touch-icon.png",
-    "_site/assets/images/writeups/qnqsec/write.png",
     "_site/assets/images/pwn/tcache/Untitled.md",
-    "assets/images/pwn/tcache/Untitled.md",
-    "_site/old_assests/images/pwn/tcache/Untitled.md",
-    "old_assests/images/pwn/tcache/Untitled.md",
-    "_posts/2025-09-25-tcache-poisioning.md",
-    "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
-    "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
-    "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
-    "_site/notes/programming/dsa/Data Structures/Stack.md"
+    "_site/assets.md",
+    "_posts/2025-12-10-creating-overlapping-chunks.md",
+    "_tabs/resume.md"
   ]
 }

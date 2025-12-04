@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Large Bin attack
+title: Large Bin Attack
 description: Explanation of large bin attack
 date: 2025-11-15
 categories:

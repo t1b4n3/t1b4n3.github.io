@@ -19,7 +19,6 @@ A **information/memory leak** is any primitive in a binary that reveals bytes fr
 - They can disclose information meant to be secrets in memory.
 - Info leaks are needed for reliable exploit development.
 
-
 ## Common leak Primitives
 
 ### Uninitialized Data Access (UDA)
@@ -37,9 +36,47 @@ Overwrite the target partially (LSB), leaving only some original bytes. Heap/sta
 
 ### Format String Read
 
-### Stack/Heap Over-read
+A format string is a dangerous bug that can be exploited easily. It can be leveraged to perform arbitrary read/write primitive. In this case we will focus on arbitrary read.
 
+If an attacker supplies format specifiers (such as `%x` or `%p`) but does not provide corresponding arguments, the `printf` function will unexpectedly pull values from the stack and use them as arguments.
+
+This vulnerability occurs when user-supplied input is passed directly to a function, such as one from the `printf` family.  These functions use a format string to specify how arguments should be interpreted allowing for a variable number of arguments. 
+
+correct usage
+```c
+int age = 20;
+char name[32] = "t1b4n3";
+printf("Name: %s\nAge: %d\n", name, age);
+```
+
+As expected, we get
+
+```sh
+Name: t1b4n3
+Age: 20
+```
+
+What happens when w do no pass any arguments
+
+```c
+printf("Name: %p\nAge: %p\n");
+```
+
+It leaks some addresses from the stack.
+
+```sh
+Name: 0x7ffc94aa2578
+Age: 0x7ffc94aa2588
+```
+
+What happened? 
+
+Since `printf` expects as many parameters as the format specifiers and since those are not provided it grabs the values off the stack.
 ### Out-Of-Bounds Read
+
+An out-of-bounds read occurs when a program attempts to access or read data from a memory address that is outside a buffer or structure it is supposed to be operating on.
+
+This is typically caused by a programming errors where there is no bounds checking performed on the input received.
 
 ### Return Oriented Programming (ROP)
 
