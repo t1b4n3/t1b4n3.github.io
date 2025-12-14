@@ -1,10 +1,10 @@
 ---
 layout: post
-title:
-description: 
-date: 
-categories: 
-tags: 
+title: NexHunt CTF 2025
+description:
+date: 2025-12-14
+categories:
+tags:
 ---
 I was looking for some CTFs to play during the weekend then I saw that  [NexHunt CTF](https://ctftime.org/event/3037) had a few hours left so I joined the CTF with about 3 hours left until the CTF ends. I was only able to solve 2 pwn challenges during those hours.
 ## Archive Keeper
