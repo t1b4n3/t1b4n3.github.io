@@ -255,9 +255,9 @@ After the breakpoint we can get the offset from our buffer to the stack canary.
 
 offset to canary : 56.
 
-Now we can build our paylaod.
+Now we can build our payload.
 
-```python.
+```python
 offset_to_canary = 56
 payload = flat(
 	cyclic(offset_to_canary), # padding to canary
