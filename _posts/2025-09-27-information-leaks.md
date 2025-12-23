@@ -4,8 +4,8 @@ title: Info leaks in software exploitation.
 description:
 date: 2025-09-27
 categories:
-  - Guide
-  - info-leaks
+  - Notes
+  - heap-exploitation
 tags:
   - info-leak
 ---

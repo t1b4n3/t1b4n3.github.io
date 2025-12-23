@@ -4,7 +4,7 @@ title: Fastbin Exploitation
 description: Explanation of the `fastbin dup` heap exploitation technique
 date: 2025-10-05
 categories:
-  - Guide
+  - Notes
   - heap-exploitation
 tags:
   - fastbin-dup
@@ -580,31 +580,3 @@ This gets has a shell.
 ![Arbitrary Write](/assets/images/pwn/fastbin_dup/shell2.png)
 
 The reason why we request chunks of size 92 earlier is because we want the those chunks to belong to the `0x70 fastbin`, which is the same `fastbin` that the our fake chunk near `__malloc_hook` will be placed in if it was freed (`0x7f` in this case). This is done so that chunk can have the correct size.  
-## Write Targets
-
-So which targets would we wish to overwrite?
-- `__free_hook`, `__malloc_hook`
-	- Removed in `glibc >= 2.34`
-- Global Offset Table (GOT) overwrite
-	- Requires No Full RELRO
-	- 
-- File Structure exploitation | FSOP
-	- `_IO_list_all` -> fake `_IO_FILE`
-	- Trigger
-		- `exit()`, `fwrite/fread`, `_IO_flush_all_lockp`, etc
-- `_rtld_global`, `_rtld_global_ro` (dynamic linker structures)
-	- Target:
-		- `dl_rtld_lock_recursive`
-		- `dl_rtld_unlock_recursive`
-		- `_dl_fini`
-	- Trigger
-		- `exit()`, `dlclose()`
-- TLS (Thread Local Storage)
-	- The TLS area contains sensitive pointers including stack canary:
-		- By overwriting the master copy of the canary, you can bypass Stack canary protection.
-- Heap to stack pivot exploit
-	- Leak stack address, then redirect heap allocation onto the stack and overwrite a saved return address with ROP
-	- Redirect allocation to the `environ-0x10` in order to leak the `environ` variable from libc. Then `*environ` points into the stack.
-	- Compute the target (saved return address)
-	- redirect the allocation to the target (stack saved return address)
-	- Overwrite saved return address  with ROP chain.

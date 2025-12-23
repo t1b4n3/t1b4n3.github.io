@@ -10,7 +10,7 @@ tags:
 
 # Race condtions
 
-Race conditions are a class of software bugs, often tied to concurrency and timing issues in a system. Race conditions arise from multiple processes/threads that operate on related entities (shared object).
+Race conditions are a class of software bugs, often tied to concurrency and timing issues in a system. Race conditions arise from multiple processes/threads that operate on a shared object.
 
 Within user-land processes, most race conditions reduce to races in the file system, while in kernel they are present in various places.
 

@@ -4,9 +4,10 @@ title: House of Force
 description:
 date: 2025-11-12
 categories:
-  - Guide
+  - Notes
   - heap-exploitation
 tags:
+  - house-of-force
 ---
 # House of Force
 

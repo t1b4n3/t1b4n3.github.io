@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-12-14-nexhunt-ctf.md",
+                "file": "_posts/2025-12-23-file-structure-exploitaton.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-12-14-nexhunt-ctf"
+              "title": "2025-12-23-file-structure-exploitaton"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-12-14-nexhunt-ctf.md",
+                "file": "_posts/2025-12-23-file-structure-exploitaton.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-12-14-nexhunt-ctf"
+              "title": "Outline of 2025-12-23-file-structure-exploitaton"
             }
           }
         ],
@@ -172,39 +172,33 @@
   },
   "active": "953b5a25ba38497d",
   "lastOpenFiles": [
-    "assets/images/writeups/nexhunt/ghost_note/shell.png",
-    "assets/images/writeups/nexhunt/archive_keeper/shell.png",
-    "_posts/2025-10-20-qnqsec-debtors-database.md",
-    "_posts/2025-12-14-nexhunt-ctf.md",
-    "assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
-    "assets/images/writeups/nexhunt/archive_keeper/archive.png",
-    "assets/images/writeups/nexhunt/ghost_note",
-    "assets/images/writeups/nexhunt/archive_keeper",
-    "assets/images/writeups/ghost_note",
-    "assets/images/writeups/archive_keeper",
-    "assets/images/writeups/nexhunt/ghostnote.png",
-    "assets/images/writeups/nexhunt/archive.png",
-    "assets/images/writeups/nexhunt",
-    "assets/images/writeups/hexhunt/ghostnote.png",
-    "assets/images/writeups/hexhunt/archive.png",
-    "assets/images/writeups/hexhunt",
-    "_posts/2025-12-15-type-confusion.md",
-    "_posts/2025-12-30-creating-overlapping-chunks.md",
-    "_posts/2025-10-05-Fastbin-dup.md",
-    "_posts/2025-09-25-tcache-poisioning.md",
+    "_posts/2025-09-26-ret2gets.md",
+    "_posts/2025-10-13-srop.md",
     "_posts/2025-10-10-UDA.md",
-    "_posts/2025-12-20-file-structure-exploitaton.md",
-    "_posts/2026-02-14-symbolic-execution.md",
-    "_posts/2025-11-03-off-by-one.md",
-    "_tabs/about.md",
-    "_posts/2026-01-01-bootloaders.md",
+    "_posts/2025-10-05-Fastbin-dup.md",
+    "_posts/2025-09-27-information-leaks.md",
+    "_posts/2025-09-25-tcache-poisioning.md",
+    "_posts/2025-09-07-unlink-exploit.md",
+    "_posts/2025-07-28-Global_varibale_overwrite.md",
+    "_posts/2025-07-21-Pwn-Environment-Lab.md",
+    "_posts/2025-04-28-Gambling.md",
+    "_posts/2025-04-23-Protostar-Stack.md",
+    "_posts/2025-10-20-qnqsec-debtors-database.md",
+    "_site/categories/uninitialized-data-access/index.html",
+    "_site/categories/uninitialized-data-access",
     "_site/archives/index.html",
     "_site/archives",
     "_site/tags/index.html",
     "_site/resume/index.html",
+    "_site/resume",
+    "_site/projects/index.html",
+    "_site/projects",
+    "_site/about/index.html",
     "_site/assets/img/favicons/mstile-150x150.png",
     "_site/assets/img/favicons/favicon-32x32.png",
     "_site/assets/img/favicons/favicon-16x16.png",
+    "_site/assets/img/favicons/android-chrome-512x512.png",
+    "_site/assets/img/favicons/android-chrome-192x192.png",
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
     "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
     "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
@@ -217,6 +211,12 @@
     "_site/notes/binexp/stack/ROP/ret2dlresolve.md",
     "_site/notes/programming/kernel/Tools.md",
     "_site/notes/programming/kernel/Introduction.md",
-    "_site/notes/programming/asm/Arrays.md"
+    "_site/notes/programming/asm/Arrays.md",
+    "_site/notes/binexp/stack/Integer Overflow and Underflow.md",
+    "_site/assets/img/web-app-manifest-512x512.png",
+    "_site/assets/img/web-app-manifest-192x192.png",
+    "_site/assets/img/favicon.svg",
+    "_site/assets/img/favicon-96x96.png",
+    "_site/assets/img/apple-touch-icon.png"
   ]
 }

@@ -4,7 +4,7 @@ title: Large Bin Attack
 description: Explanation of large bin attack
 date: 2025-11-15
 categories:
-  - Guide
+  - Notes
   - heap-exploitation
 tags:
   - large-bin

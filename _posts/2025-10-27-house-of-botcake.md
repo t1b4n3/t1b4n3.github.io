@@ -4,7 +4,7 @@ title: House of Botcake
 description:
 date: 2025-10-27
 categories:
-  - Guide
+  - Notes
   - heap-exploitation
 tags:
   - house-of-botcake
@@ -108,5 +108,5 @@ b @ 0x7fffffffdeb0 = target @ 0x7fffffffdeb0
 target: PWNED
 ```
 
-### Example
+
 
