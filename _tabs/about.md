@@ -95,14 +95,19 @@ order: 2
       <a href="https://github.com/t1b4n3" target="_blank" title="GitHub"><i class="fab fa-github"></i></a> |
       <a href="https://twitter.com/t1b4n3" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a> |
       <a href="mailto:nkatekotibane101@gmail.com" title="Email"><i class="fas fa-envelope"></i></a> |
-      <a href="https://www.linkedin.com/in/nkatekotibane" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> 
+      <a href="https://www.linkedin.com/in/nkatekotibane" target="_blank" title="LinkedIn"><i class="fab fa-linkedin">
+       </i></a> | 
+       <a href="https://discord.com/users/laporte_14" target="_blank" title="Discord"><i class="fab fa-discord">
+      </i></a>
+      |
+       
     </div>
 
     <div class="roles">
       <p><code>$ what-do-i-do</code></p>
       <p>&gt; Exploit Development</p>
+	<p>&gt; Vulnerability Research</p>
        <p>&gt; Reverse Engineering</p>
-	  <p>&gt; Systems Development</p>
     </div>
   </div>
 
@@ -112,23 +117,21 @@ order: 2
   <div class="profile-right">
     Hello 
 
-    I'm Nkateko,a, cybersecurity enthusiast focused on low-level exploit and systems development.
+    I'm Nkateko, a aspiring vulnerability research and exploit developer. 
     <p>
-    This blog is where i will post CTF writeups and real world research that i do. 
-    </p>
-    <p>
-	 I'm currently learning low level vulnerability research and exploit development via CTFs. Next on my list is to get into kernel exploitation. 
+	 I'm currently learning low level vulnerability research and exploit development via CTFs and recreating n-day. Next on my list is to get into kernel exploitation. 
 	</p>
 	
 	<p>
-	 During weekdays, I study exploit techniques using past ctf challenges and writeups and  also using security papers, articles, etc. On the weekend, I play active CTFs solo. (Looking for a team to join)
-        </p>
+	 During weekdays, I study exploit techniques using past ctf challenges and writeups and  also using security papers, articles, etc. On the weekend, I play active CTFs with
+<a href="https://deadpiratesociety.club/">Dead Pirate Society</a> (Recently Joined)
+    </p>
 	<div class="skills">
       <h4>My Toolkit Includes:</h4>
       <span>C/C++</span>
       <span>Python</span>
       <span>Assembly</span>
-      <span>PHP</span>
+       <span>Vulnerability Research</span>
       <span>Reverse Engineering</span>
       <span>Exploit Development</span>
     </div>
