@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-12-23-file-structure-exploitaton.md",
+                "file": "_tabs/resume.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-12-23-file-structure-exploitaton"
+              "title": "resume"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-12-23-file-structure-exploitaton.md",
+                "file": "_tabs/resume.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-12-23-file-structure-exploitaton"
+              "title": "Outline of resume"
             }
           }
         ],
@@ -172,6 +172,7 @@
   },
   "active": "953b5a25ba38497d",
   "lastOpenFiles": [
+    "_posts/2025-12-23-file-structure-exploitaton.md",
     "_posts/2025-09-26-ret2gets.md",
     "_posts/2025-10-13-srop.md",
     "_posts/2025-10-10-UDA.md",
@@ -212,7 +213,6 @@
     "_site/notes/programming/kernel/Tools.md",
     "_site/notes/programming/kernel/Introduction.md",
     "_site/notes/programming/asm/Arrays.md",
-    "_site/notes/binexp/stack/Integer Overflow and Underflow.md",
     "_site/assets/img/web-app-manifest-512x512.png",
     "_site/assets/img/web-app-manifest-192x192.png",
     "_site/assets/img/favicon.svg",

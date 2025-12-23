@@ -15,7 +15,7 @@ Hello, my name is Nkateko Tibane. Just a curious IT student who has passion for 
 ---
 ## Relevant Experience
 
-**[TibaneC2](https://github.com/t1b4n3/TibaneC2)**  | June 2025 - Present
+**[TibaneC2](https://github.com/t1b4n3/TibaneC2)**  | June 2025 - Nov 2025
 
 - Built a full C2 framework with custom encrypted communication protocol, enabling secure bidirectional communication between server, CLI console and implants. 
 - Designed and Implemented a C server supporting mulit-implant orchestration and operator command routing.
