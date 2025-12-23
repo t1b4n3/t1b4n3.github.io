@@ -1,0 +1,155 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://t1b4n3.github.io/</id>
+  <title>t1b4n3</title>
+  <subtitle>Portfolio and blog of an aspiring low-level vulnerability researcher and exploit developer. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.</subtitle>
+  <updated>2025-12-23T22:54:18+02:00</updated>
+  <author>
+    <name>Nkateko Tibane</name>
+    <uri>https://t1b4n3.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://t1b4n3.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://t1b4n3.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Nkateko Tibane </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Introduction to File Structure Exploitation</title>
+    <link href="https://t1b4n3.github.io/post/file-structure-exploitaton/" rel="alternate" type="text/html" title="Introduction to File Structure Exploitation" />
+    <published>2025-12-23T00:00:00+02:00</published>
+  
+    <updated>2025-12-23T00:00:00+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/file-structure-exploitaton/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/file-structure-exploitaton/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Notes" />
+    
+    <category term="File-Struct-Exploitation" />
+    
+    <category term="FSOP" />
+    
+  
+
+  <summary>File Structure Exploitation is a binary exploitation technique that uses GLIBC file streams structures to gain code execution. It has become popular since pointers like __malloc_hook, __free_hook, etc. have been removed from GLIBC 2.34.  I was searching the internet on another way to get code execution of latest GLIBC versions, when i encountered it.  File Structure Exploitation  File structure...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>NexHunt CTF 2025</title>
+    <link href="https://t1b4n3.github.io/post/nexhunt-ctf/" rel="alternate" type="text/html" title="NexHunt CTF 2025" />
+    <published>2025-12-14T00:00:00+02:00</published>
+  
+    <updated>2025-12-23T12:13:49+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/nexhunt-ctf/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/nexhunt-ctf/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="writeup" />
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>I was looking for some CTFs to play during the weekend then I saw that  NexHunt CTF had a few hours left so I joined the CTF with about 3 hours left until the CTF ends. I was only able to solve 2 pwn challenges during those hours. Archive Keeper    About The binary   rabin2 -I ./chall arch     x86 baddr    0x400000 binsz    14182 bintype  elf bits     64 canary   false injprot  false class    E...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Large Bin Attack</title>
+    <link href="https://t1b4n3.github.io/post/large-bin-attack/" rel="alternate" type="text/html" title="Large Bin Attack" />
+    <published>2025-11-15T00:00:00+02:00</published>
+  
+    <updated>2025-12-23T12:13:49+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/large-bin-attack/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/large-bin-attack/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Notes" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>Explanation of large bin attack</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>House of Force</title>
+    <link href="https://t1b4n3.github.io/post/house-of-force/" rel="alternate" type="text/html" title="House of Force" />
+    <published>2025-11-12T00:00:00+02:00</published>
+  
+    <updated>2025-12-23T12:13:49+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/house-of-force/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/house-of-force/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Notes" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>House of Force  This is a older exploitation technique that works on glibc 2.27 and lower.  The goal of the house of force is to get malloc() to return a arbitrary value/address by overwriting the top chunk. So what is the top chunk?  The top chunk (also known as the wilderness) is a special chunk, it is last in memory (highest address) for the given heap arena. It is not part of any free bins ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Off-by-one overflow</title>
+    <link href="https://t1b4n3.github.io/post/off-by-one/" rel="alternate" type="text/html" title="Off-by-one overflow" />
+    <published>2025-11-03T00:00:00+02:00</published>
+  
+    <updated>2025-12-23T12:13:49+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/off-by-one/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/off-by-one/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Notes" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>Explanation on how off-by-one vulnerability on the heap can lead to RCE</summary>
+
+  </entry>
+
+</feed>
+
+
