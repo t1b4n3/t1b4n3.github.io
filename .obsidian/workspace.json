@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-01-20-Linux-Kernel-Exploitation-Fundementals.md",
+                "file": "_posts/2026-12-30-debugging_and_exploiting multi-threaded applications..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-20-Linux-Kernel-Exploitation-Fundementals"
+              "title": "2026-12-30-debugging_and_exploiting multi-threaded applications."
             }
           }
         ],
@@ -173,16 +173,16 @@
   },
   "active": "953b5a25ba38497d",
   "lastOpenFiles": [
+    "_posts/2026-12-15-type-confusion.md",
+    "_posts/2026-02-14-symbolic-execution.md",
+    "_posts/2026-01-30-house-of-einherjar.md",
     "_posts/2026-01-23-Linux-Kernel-Exploitation-RET2USR.md",
     "_posts/2026-01-20-Linux-Kernel-Exploitation-Fundementals.md",
-    "_posts/2026-01-30-house-of-einherjar.md",
     "_posts/2026-12-30-debugging_and_exploiting multi-threaded applications..md",
     "_posts/2026-12-25-fuzzing.md",
     "_posts/2026-11-01-bootloaders.md",
     "_posts/2026-11-02-race-conditions.md",
     "_posts/2026-12-22-Heap Exploitation Targets.md",
-    "_posts/2026-12-15-type-confusion.md",
-    "_posts/2026-02-14-symbolic-execution.md",
     "_posts/2025-12-23-file-structure-exploitaton.md",
     "_tabs/resume.md",
     "_tabs/projects.md",
