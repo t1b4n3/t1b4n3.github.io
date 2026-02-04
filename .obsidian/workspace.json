@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-02-13-neolynx-pwnable.co.il.md",
+                "file": "_posts/2025-12-23-file-structure-exploitaton.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-13-neolynx-pwnable.co.il"
+              "title": "2025-12-23-file-structure-exploitaton"
             }
           },
           {
@@ -187,6 +187,8 @@
   },
   "active": "953b5a25ba38497d",
   "lastOpenFiles": [
+    "_posts/2025-11-03-off-by-one.md",
+    "_posts/2026-02-13-neolynx-pwnable.co.il.md",
     "_site/archives/index.html",
     "_site/archives",
     "_site/tags/index.html",
@@ -197,7 +199,6 @@
     "_site/post/unlink-exploit/index.html",
     "_site/post/tcache-poisioning/index.html",
     "_site/post/srop/index.html",
-    "_site/post/ret2gets/index.html",
     "_site/assets/img/favicons/mstile-150x150.png",
     "_site/assets/img/favicons/favicon-32x32.png",
     "_site/assets/img/favicons/favicon-16x16.png",
@@ -229,7 +230,6 @@
     "_posts/2026-02-01-pascalCTF-yetanothernotetaker.md",
     "_posts/2025-12-14-nexhunt-ctf.md",
     "_posts/2026-02-14-symbolic-execution.md",
-    "_posts/2026-02-13-neolynx-pwnable.co.il.md",
     "_posts/2026-01-30-house-of-einherjar.md",
     "_posts/2026-12-25-fuzzing.md",
     "_posts/2026-12-30-debugging_and_exploiting multi-threaded applications..md"
