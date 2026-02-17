@@ -85,7 +85,7 @@ order: 2
   <div class="profile-container">
 
   <div class="profile-left">
-    <img src="/assets/images/me.jpeg" alt="Profile Image">
+
     <p><code>$ whoami</code></p>
     <h2>Nkateko Tibane</h2>
     <p>IT student</p>
@@ -124,7 +124,7 @@ order: 2
 	
 	<p>
 	 During weekdays, I study exploit techniques using past ctf challenges and writeups and  also using security papers, articles, etc. On the weekend, I play active CTFs with
-<a href="https://deadpiratesociety.club/">Dead Pirate Society</a> (Recently Joined)
+<a href="https://deadpiratesociety.club/">Dead Pirate Society</a>.
     </p>
 	<div class="skills">
       <h4>My Toolkit Includes:</h4>
