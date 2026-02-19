@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_tabs/about.md",
+                "file": "_posts/2026-02-19-CVE-2017-14493.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "2026-02-19-CVE-2017-14493"
             }
           }
         ],
@@ -143,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_tabs/about.md",
+                "file": "_posts/2026-02-19-CVE-2017-14493.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of about"
+              "title": "Outline of 2026-02-19-CVE-2017-14493"
             }
           }
         ],
@@ -157,7 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 206.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,23 +172,7 @@
   },
   "active": "953b5a25ba38497d",
   "lastOpenFiles": [
-    "Gemfile.lock",
-    "assets.md",
-    "_posts/2026-02-18-CVE-2017-14493.md",
-    "_posts/2026-01-30-house-of-einherjar.md",
-    "_posts/2026-12-22-Heap Exploitation Targets.md",
-    "_posts/2026-12-15-type-confusion.md",
-    "_posts/2026-11-02-race-conditions.md",
-    "_posts/2026-11-01-bootloaders.md",
-    "_posts/2026-02-13-neolynx-pwnable.co.il.md",
-    "_posts/2026-02-14-symbolic-execution.md",
-    "assets/images/research/cve-2017-14493/memcpy_b.png",
-    "assets/images/research/cve-2017-14493/segfault.png",
-    "assets/images/research/cve-2017-14493/running_gdb.png",
-    "assets/images/research/cve-2017-14493",
-    "assets/images/research",
-    "_posts/2025-12-23-file-structure-exploitaton.md",
-    "_posts/2025-10-05-Fastbin-dup.md",
+    "_tabs/about.md",
     "_site/archives/index.html",
     "_site/archives",
     "_site/tags/index.html",
@@ -197,6 +181,8 @@
     "_site/about/index.html",
     "_site/about",
     "_site/post/unlink-exploit/index.html",
+    "_site/post/tcache-poisioning/index.html",
+    "_site/post/srop/index.html",
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
     "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
     "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
@@ -211,12 +197,26 @@
     "_site/notes/programming/kernel/Introduction.md",
     "_site/notes/programming/asm/Arrays.md",
     "_site/notes/binexp/stack/Integer Overflow and Underflow.md",
+    "_site/notes/red-teaming/Reconnaissance.md",
+    "_site/notes/Roadmap.md",
     "_site/assets/img/web-app-manifest-512x512.png",
     "_site/assets/img/web-app-manifest-192x192.png",
     "_site/assets/img/favicon.svg",
     "_site/assets/img/favicon-96x96.png",
     "_site/assets/img/apple-touch-icon.png",
     "_site/assets/images/writeups/nexhunt/ghost_note/shell.png",
-    "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png"
+    "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
+    "_site/assets/images/writeups/nexhunt/archive_keeper/shell.png",
+    "_site/assets/images/writeups/nexhunt/archive_keeper/archive.png",
+    "_site/assets/images/writeups/qnqsec/write.png",
+    "_site/assets.md",
+    "_site/assets/images/pwn/tcache/Untitled.md",
+    "assets.md",
+    "_posts/2026-02-19-CVE-2017-14493.md",
+    "_posts/2026-01-30-house-of-einherjar.md",
+    "_posts/2026-12-22-Heap Exploitation Targets.md",
+    "_posts/2026-12-15-type-confusion.md",
+    "_posts/2026-11-02-race-conditions.md",
+    "_posts/2026-11-01-bootloaders.md"
   ]
 }
