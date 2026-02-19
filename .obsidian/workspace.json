@@ -172,7 +172,6 @@
   },
   "active": "953b5a25ba38497d",
   "lastOpenFiles": [
-    "_tabs/about.md",
     "_site/archives/index.html",
     "_site/archives",
     "_site/tags/index.html",
@@ -183,6 +182,7 @@
     "_site/post/unlink-exploit/index.html",
     "_site/post/tcache-poisioning/index.html",
     "_site/post/srop/index.html",
+    "_site/post/ret2gets/index.html",
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
     "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
     "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
@@ -204,19 +204,19 @@
     "_site/assets/img/favicon.svg",
     "_site/assets/img/favicon-96x96.png",
     "_site/assets/img/apple-touch-icon.png",
+    "_site/assets.md",
     "_site/assets/images/writeups/nexhunt/ghost_note/shell.png",
     "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/shell.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/archive.png",
     "_site/assets/images/writeups/qnqsec/write.png",
-    "_site/assets.md",
     "_site/assets/images/pwn/tcache/Untitled.md",
+    "_tabs/about.md",
     "assets.md",
     "_posts/2026-02-19-CVE-2017-14493.md",
     "_posts/2026-01-30-house-of-einherjar.md",
     "_posts/2026-12-22-Heap Exploitation Targets.md",
     "_posts/2026-12-15-type-confusion.md",
-    "_posts/2026-11-02-race-conditions.md",
-    "_posts/2026-11-01-bootloaders.md"
+    "_posts/2026-11-02-race-conditions.md"
   ]
 }
