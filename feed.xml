@@ -1,0 +1,153 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://t1b4n3.github.io/</id>
+  <title>t1b4n3</title>
+  <subtitle>Portfolio and blog of an aspiring low-level vulnerability researcher and exploit developer. Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.</subtitle>
+  <updated>2026-02-21T10:04:56+02:00</updated>
+  <author>
+    <name>Nkateko Tibane</name>
+    <uri>https://t1b4n3.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://t1b4n3.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://t1b4n3.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2026 Nkateko Tibane </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>From CTFs to Real-World Exploitation: Root Cause Analysis of CVE-2017-14493 in dnsmasq</title>
+    <link href="https://t1b4n3.github.io/post/RCA-CVE-2017-14493/" rel="alternate" type="text/html" title="From CTFs to Real-World Exploitation: Root Cause Analysis of CVE-2017-14493 in dnsmasq" />
+    <published>2026-02-19T00:00:00+02:00</published>
+  
+    <updated>2026-02-19T00:00:00+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/RCA-CVE-2017-14493/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/RCA-CVE-2017-14493/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="research" />
+    
+  
+
+  <summary>[CVE-2017-14493 ] Root Cause Analysis on vulnerable dnsmasq software.  This is my first step of moving from CTFs to Real World Vulnerabilities. My goal  is to move from exploiting CTFs to real world software such has dnsmasq and eventually both the linux and andriod kernel.  Lab Setup.  I will be running the vulnerable software on a kali virtual machine using virtualbox, and i will use my ubunt...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Pascal CTF - yetanothernotetaker</title>
+    <link href="https://t1b4n3.github.io/post/pascalCTF-yetanothernotetaker/" rel="alternate" type="text/html" title="Pascal CTF - yetanothernotetaker" />
+    <published>2026-02-01T00:00:00+02:00</published>
+  
+    <updated>2026-02-01T00:00:00+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/pascalCTF-yetanothernotetaker/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/pascalCTF-yetanothernotetaker/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="writeup" />
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>YET ANOTHER NOTE TAKER  About the binary  The binary  t1b4n3@debian:~/ctf/pascalctf/yetanothernotetaker/challenge$ file notetaker notetaker: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter ./libs/ld-2.23.so, for GNU/Linux 2.6.32, BuildID[sha1]=768a7bc2d2918ceb196b57bfa9528681820eae43, not stripped   The binary is a elf 64 bit executable, and it is not stripp...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Introduction to File Structure Exploitation</title>
+    <link href="https://t1b4n3.github.io/post/file-structure-exploitaton/" rel="alternate" type="text/html" title="Introduction to File Structure Exploitation" />
+    <published>2025-12-23T00:00:00+02:00</published>
+  
+    <updated>2026-02-04T10:12:28+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/file-structure-exploitaton/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/file-structure-exploitaton/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Notes" />
+    
+    <category term="File-Struct-Exploitation" />
+    
+    <category term="FSOP" />
+    
+  
+
+  <summary>File Structure Exploitation is a binary exploitation technique that uses GLIBC file streams structures to gain code execution. It has become popular since pointers like __malloc_hook, __free_hook, etc. have been removed from GLIBC 2.34.  I was searching the internet on another way to get code execution of latest GLIBC versions, when i encountered it.  File Structure Exploitation  File structure...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>NexHunt CTF 2025</title>
+    <link href="https://t1b4n3.github.io/post/nexhunt-ctf/" rel="alternate" type="text/html" title="NexHunt CTF 2025" />
+    <published>2025-12-14T00:00:00+02:00</published>
+  
+    <updated>2025-12-23T12:13:49+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/nexhunt-ctf/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/nexhunt-ctf/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="writeup" />
+    
+    <category term="pwn" />
+    
+  
+
+  <summary>I was looking for some CTFs to play during the weekend then I saw that  NexHunt CTF had a few hours left so I joined the CTF with about 3 hours left until the CTF ends. I was only able to solve 2 pwn challenges during those hours. Archive Keeper    About The binary   rabin2 -I ./chall arch     x86 baddr    0x400000 binsz    14182 bintype  elf bits     64 canary   false injprot  false class    E...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Large Bin Attack</title>
+    <link href="https://t1b4n3.github.io/post/large-bin-attack/" rel="alternate" type="text/html" title="Large Bin Attack" />
+    <published>2025-11-15T00:00:00+02:00</published>
+  
+    <updated>2025-12-23T12:13:49+02:00</updated>
+  
+    <id>https://t1b4n3.github.io/post/large-bin-attack/</id>
+    <content type="text/html" src="https://t1b4n3.github.io/post/large-bin-attack/" />
+    <author>
+      <name>Nkateko Tibane</name>
+    </author>
+
+  
+    
+    <category term="Notes" />
+    
+    <category term="heap-exploitation" />
+    
+  
+
+  <summary>Explanation of large bin attack</summary>
+
+  </entry>
+
+</feed>
+
+
