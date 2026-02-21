@@ -88,7 +88,7 @@ paginate: 10
 comments:
   provider: giscus
   giscus:
-    repo: "tibane0/tibane0.github.io"
+    repo: "t1b4n3/t1b4n3.github.io"
     repo_id: "R_kgDOOv_aMg"
     category: "General"
     category_id: "DIC_kwDOOv_aMs4CqjgI"
