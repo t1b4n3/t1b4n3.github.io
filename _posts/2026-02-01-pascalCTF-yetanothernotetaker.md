@@ -212,5 +212,4 @@ def exploit():
 ```
 
 
-[FULL SCRIPT]()
 
