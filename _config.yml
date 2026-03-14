@@ -7,14 +7,20 @@ theme: jekyll-theme-chirpy
 lang: en
 timezone: Africa/Johannesburg
 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-toc
+  - jekyll-feed
+  - jekyll-sitemap
+
 # ────────────────────────────────────────────────
 # Site Identity
 # ────────────────────────────────────────────────
 title: "t1b4n3"
-tagline: "Exploring low-level development and the craft of pwning."
+tagline: "Security research blog focused on linux pwn / kernel stuff"
 description: >-
-  Portfolio and blog of an aspiring low-level vulnerability researcher and exploit developer.
-  Red team mindset. Real-world attack surface. Writeups, tools, and notes from the field.
+  Security research blog focused on vulnerability research, binary exploitation,
+  kernel exploitation, CVE root cause analysis, and exploit development.
 
 url: "https://t1b4n3.github.io"
 baseurl: ""         # leave empty for GitHub Pages root
@@ -57,7 +63,7 @@ webmaster_verifications:
 # ────────────────────────────────────────────────
 analytics:
   google:
-    id: G-W8XVFJ9KM9
+    id: "G-W8XVFJ9KM9"
   goatcounter:
     id:
   umami:
@@ -111,16 +117,26 @@ pwa:
 # ────────────────────────────────────────────────
 # Markdown & Syntax Highlighting
 # ────────────────────────────────────────────────
+#kramdown:
+#  footnote_backlink: "&#8617;&#xfe0e;"
+#  syntax_highlighter: rouge
+#  syntax_highlighter_opts:
+#    css_class: highlight
+#    block:
+#      line_numbers: true
+#      start_line: 1
+#    span:
+#      line_numbers: false
 kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  footnote_backlink: "↩"
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: highlight
     block:
       line_numbers: true
-      start_line: 1
-    span:
-      line_numbers: false
 
 # ────────────────────────────────────────────────
 # Collections & Defaults
