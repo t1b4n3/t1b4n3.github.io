@@ -56,7 +56,7 @@ order: 2
   <p>
     If you have any questions about my blog, feel free to reach out.
     If you have interesting research in linux userland / kernel VR, I’m down for anything as long as it’s remote or in South Africa.
-    (<a href="#">my resume</a>).
+    (<a href="/assets/resume.pdf">my resume</a>).
   </p>
 
   <ul>
