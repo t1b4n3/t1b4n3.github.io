@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-05-09-CVE-2025-53630.md",
+                "file": "_posts/2026-04-16-CVE-2025-53630.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-09-CVE-2025-53630"
+              "title": "2026-04-16-CVE-2025-53630"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d704ff5841882aa0",
@@ -174,7 +173,7 @@
   "active": "81dacb66d68250e7",
   "lastOpenFiles": [
     "_posts/2026-03-13-RCA-CVE-2024-22857.md",
-    "_posts/2026-05-09-CVE-2025-53630.md",
+    "_posts/2026-04-16-CVE-2025-53630.md",
     "assets/images/research/Untitled.md",
     "assets/images/research/cve-2025-53630",
     "_posts/2026-11-01-bootloaders.md",
