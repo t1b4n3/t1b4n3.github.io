@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-02-19-RCA-CVE-2017-14493.md",
+                "file": "_posts/2026-04-16-CVE-2025-53630.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-19-RCA-CVE-2017-14493"
+              "title": "2026-04-16-CVE-2025-53630"
             }
           }
         ]
@@ -173,7 +173,7 @@
   "active": "81dacb66d68250e7",
   "lastOpenFiles": [
     "_posts/2026-03-13-RCA-CVE-2024-22857.md",
-    "_posts/2026-04-16-CVE-2025-53630.md",
+    "_posts/2026-02-19-RCA-CVE-2017-14493.md",
     "_site/archives/index.html",
     "_site/archives",
     "_site/tags/index.html",
@@ -181,19 +181,19 @@
     "_site/projects",
     "_site/about/index.html",
     "_site/about",
+    "_site/post/ret2gets/index.html",
     "_site/post/unlink-exploit/index.html",
-    "_site/post/srop/index.html",
     "_site/post/tcache-poisioning/index.html",
     "_site/notes/programming/kernel/Linux Device Drivers/Devices/Character Device.md",
-    "_site/notes/binexp/stack/ROP/ret2gets.md",
-    "_site/notes/binexp/stack/ROP/ret2dlresolve.md",
-    "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
     "_site/notes/programming/dsa/Data Structures/Threaded Tree.md",
     "_site/notes/programming/dsa/Data Structures/Stack.md",
-    "_site/notes/programming/dsa/Data Structures/Binary Search Tree.md",
     "_site/notes/programming/dsa/Data Structures/Binary Tree.md",
+    "_site/notes/programming/dsa/Data Structures/Binary Search Tree.md",
     "_site/notes/programming/dsa/Algorithms/Sorting Algorithms.md",
     "_site/notes/programming/dsa/Algorithms/Searching Algorithms.md",
+    "_site/notes/programming/kernel/Linux Device Drivers/Intro.md",
+    "_site/notes/binexp/stack/ROP/ret2dlresolve.md",
+    "_site/notes/binexp/stack/ROP/ret2gets.md",
     "_site/notes/programming/kernel/Tools.md",
     "_site/notes/programming/kernel/Introduction.md",
     "_site/notes/programming/asm/Arrays.md",
@@ -205,13 +205,14 @@
     "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/shell.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/archive.png",
-    "_site/assets/images/writeups/pascalctf/shell.png",
-    "_site/assets/images/writeups/pascalctf/overwite.png",
-    "_site/assets/images/writeups/pascalctf/fmt_str_read.png",
-    "_site/assets/images/writeups/pascalctf/calc_libc_base.png",
     "_site/assets/images/writeups/qnqsec/write.png",
     "_site/assets/images/writeups/qnqsec/shell.png",
+    "_site/assets/images/writeups/qnqsec/offset9.png",
+    "_site/assets/images/writeups/qnqsec/offset3.png",
+    "_site/assets/images/writeups/qnqsec/check_canary.png",
+    "_site/assets/images/writeups/qnqsec/canary.png",
     "_site/assets/images/pwn/tcache/Untitled.md",
+    "_posts/2026-04-16-CVE-2025-53630.md",
     "_posts/2026-12-01-Exploiting-CVE-2025-39888.md",
     "assets/images/research/Untitled.md",
     "_posts/2026-11-01-bootloaders.md",
