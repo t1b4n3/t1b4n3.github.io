@@ -173,6 +173,7 @@
   },
   "active": "317a8dac8624e26f",
   "lastOpenFiles": [
+    "Gemfile.lock",
     "_posts/2026-08-20-race-conditions.md",
     "_posts/2026-08-25-fuzzing.md",
     "_posts/2026-12-15-type-confusion.md",
@@ -208,7 +209,6 @@
     "_site/notes/binexp/stack/Integer Overflow and Underflow.md",
     "_site/notes/red-teaming/Reconnaissance.md",
     "_site/notes/Roadmap.md",
-    "_site/assets.md",
     "_site/assets/images/writeups/nexhunt/ghost_note/shell.png",
     "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/shell.png",
