@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-04-16-CVE-2025-53630.md",
+                "file": "_posts/2026-08-14-information-disclosure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-16-CVE-2025-53630"
+              "title": "2026-08-14-information-disclosure"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -142,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2026-04-01-Exploiting-CVE-2025-39888.md",
+                "file": "_posts/2026-08-14-information-disclosure.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-04-01-Exploiting-CVE-2025-39888"
+              "title": "Outline"
             }
           }
         ],
@@ -156,8 +158,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.5,
-    "collapsed": true
+    "width": 206.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,9 +173,14 @@
   },
   "active": "317a8dac8624e26f",
   "lastOpenFiles": [
+    "_posts/2026-08-20-race-conditions.md",
     "_posts/2026-08-25-fuzzing.md",
+    "_posts/2026-12-15-type-confusion.md",
+    "_posts/2026-12-30-debugging_and_exploiting multi-threaded applications..md",
+    "_posts/2026-12-22-Heap Exploitation Targets.md",
+    "_posts/2026-08-14-information-disclosure.md",
+    "_posts/2026-04-16-CVE-2025-53630.md",
     "_posts/2026-02-19-RCA-CVE-2017-14493.md",
-    "_posts/2025-09-27-information-leaks.md",
     "_posts/2025-10-20-qnqsec-debtors-database.md",
     "_site/archives/index.html",
     "_site/archives",
@@ -203,7 +209,6 @@
     "_site/notes/red-teaming/Reconnaissance.md",
     "_site/notes/Roadmap.md",
     "_site/assets.md",
-    "_site/2026-05-14.md",
     "_site/assets/images/writeups/nexhunt/ghost_note/shell.png",
     "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/shell.png",
@@ -213,10 +218,6 @@
     "_site/assets/images/research/cve-2017-14493/memcpy_b.png",
     "_site/assets/images/writeups/qnqsec/write.png",
     "_site/assets/images/writeups/qnqsec/shell.png",
-    "_site/assets/images/writeups/qnqsec/offset9.png",
-    "_site/assets/images/pwn/tcache/Untitled.md",
-    "_posts/2026-04-16-CVE-2025-53630.md",
-    "_posts/2026-03-13-RCA-CVE-2024-22857.md",
-    "2026-05-14.md"
+    "_site/assets/images/writeups/qnqsec/offset9.png"
   ]
 }

@@ -1,24 +1,25 @@
 ---
 layout: post
-title: Info leaks in software exploitation.
+title: Information Disclosure in Software Exploitation.
 description:
-date: 2025-09-27
+date: 2026-08-14
 categories:
   - Notes
   - heap-exploitation
 tags:
   - info-leak
 ---
-# Information/Memory Leaks In Binary Exploitation
+# Information/Memory Disclosure In Binary Exploitation
 
-## What is a memory leak?
-A **information/memory leak** is any primitive in a binary that reveals bytes from the program's memory such as addresses, pointers, strings and even metadata. Information leaks help bypass security mitigations such as Address Space Layout Randomization (ASLR), Position Independent Executable (PIE), etc. by giving you an pointer that you can use to compute a base address such `libc`, PIE, heap, etc. base addresses
-## Why do they matter?
+##### What is a memory leak?
+
+A **memory disclosure** is any primitive in a binary that reveals bytes from the program's memory such as addresses, pointers, strings and even metadata. Information leaks help bypass security mitigations such as Address Space Layout Randomization (ASLR), Position Independent Executable (PIE), etc. by giving you an pointer that you can use to compute a base address such `libc`, PIE, heap, etc. base addresses
+
+##### Why do they matter?
 
 - The can be used to bypass exploit mitigations that depend on randomization such as ASLR or stack canaries.
 - They can disclose information meant to be secrets in memory.
 - Info leaks are needed for reliable exploit development.
-
 ## Common leak Primitives
 
 ### Uninitialized Data Access (UDA)
@@ -157,7 +158,7 @@ payload = flat(
 
 ### Use-After-Free
 
-#### Libc leak via unsorted bin
+#### Libc leak via unsorted bin attack
 
 A common technique to get libc leak is to free a big chunk (larger than 400 bytes) so it gets into the unsorted bin. The unsorted bin is a doubly linked list and its list head is stored in the libc's data section, when we free a chunk into the unsorted bin for the first time, its backward pointer (`bk`) then points into the libc, at a known offset. If we can leak this pointer, than we can compute the base address of libc.
 
@@ -229,7 +230,17 @@ Example
 
 ```
 
+#### Read After Free
+
+read a heap chunk pointer
+
+### Heap Disclosure via Race Conditions
+
+Security checks that do not properly use mutexes are ineffective in a multithreaded environment.
+
 
 ### Type Confusion.
 
 Replace a freed object memory chunk with a different object type of same size.
+
+
