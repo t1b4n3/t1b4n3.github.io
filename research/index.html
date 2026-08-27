@@ -1,0 +1,90 @@
+---
+layout: default
+title: Research
+---
+
+<section class="archive-header">
+
+    <div class="eyebrow">
+        ~ research
+    </div>
+
+    <h1>Vulnerability Research</h1>
+
+    <p>
+        Vulnerability research, root cause analysis,
+        reverse engineering and exploit development.
+    </p>
+
+</section>
+
+
+<section class="post-grid" id="research-grid">
+
+    {% for post in site.categories.research %}
+
+    <article class="post-card">
+
+        <a href="{{ post.url | relative_url }}">
+
+            <div class="post-card-image">
+
+                <img
+                    src="{{ post.image | default: '/assets/images/post_default.jpeg' | relative_url }}"
+                    alt="{{ post.title }}"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="post-card-content">
+
+                <div class="post-card-meta">
+
+                    {{ post.date | date: "%Y-%m-%d" }}
+
+                    {% if post.tags %}
+                    · {{ post.tags | join: " · " }}
+                    {% endif %}
+
+                </div>
+
+
+                <h2>
+                    {{ post.title }}
+                </h2>
+
+
+{% if post.description %}
+
+<p>
+    {{ post.description }}
+</p>
+
+{% else %}
+
+<p>
+    {{ post.excerpt
+        | strip_html
+        | strip_newlines
+        | truncate: 180
+    }}
+</p>
+
+{% endif %}
+
+
+                <span class="post-card-arrow">
+                    →
+                </span>
+
+            </div>
+
+        </a>
+
+    </article>
+
+    {% endfor %}
+
+</section>

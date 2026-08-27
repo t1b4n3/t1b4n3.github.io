@@ -1,0 +1,722 @@
+---
+layout: default
+title: Projects
+---
+
+<style>
+
+/* =========================================================
+   PROJECT PAGE
+========================================================= */
+
+.projects-page {
+    padding-bottom: 120px;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.projects-header {
+    max-width: 800px;
+    padding: 110px 0 80px;
+}
+
+.projects-header .eyebrow {
+    margin-bottom: 24px;
+}
+
+.projects-header h1 {
+    margin: 0;
+
+    font-size: clamp(46px, 7vw, 78px);
+    line-height: 1.02;
+
+    letter-spacing: -0.045em;
+}
+
+.projects-header p {
+    max-width: 620px;
+
+    margin: 28px 0 0;
+
+    color: var(--muted);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PROJECT GRID
+========================================================= */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 24px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-card {
+    grid-column: span 6;
+
+    min-width: 0;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #3a3a3a;
+}
+
+
+/* =========================================================
+   PROJECT SIZES
+========================================================= */
+
+.project-card.small {
+    grid-column: span 4;
+}
+
+.project-card.medium {
+    grid-column: span 6;
+}
+
+.project-card.large {
+    grid-column: span 8;
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+
+.project-image {
+    width: 100%;
+
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    background: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 12px;
+
+    transition: transform 0.45s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.015);
+}
+
+/* =========================================================
+   PROJECT INFO
+========================================================= */
+
+.project-info {
+    padding: 26px;
+}
+
+.project-number {
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 10px;
+
+    color: var(--muted);
+
+    letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.project-title-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.project-title-row h2 {
+    margin: 10px 0 14px;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   STAR BADGE
+========================================================= */
+
+.star-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    margin: 0 0 14px;
+
+    padding: 4px 7px;
+
+    background: var(--tag-bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 6px;
+
+    line-height: 0;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.star-badge:hover {
+    border-color: var(--accent);
+}
+
+.star-badge img {
+    display: block;
+
+    width: auto;
+
+    height: 18px;
+}
+
+
+/* =========================================================
+   PROJECT TAGS
+========================================================= */
+
+.project-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 22px;
+}
+
+.project-tags span {
+    display: inline-block;
+
+    padding: 5px 8px;
+
+    border: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 10px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.project-description {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   COMPONENTS
+========================================================= */
+
+.project-components {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    margin-top: 28px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 11px;
+
+    color: var(--muted);
+}
+
+.project-component span {
+    display: inline-block;
+
+    min-width: 25px;
+
+    color: var(--accent);
+}
+
+
+/* =========================================================
+   PROJECT LINK
+========================================================= */
+
+.project-link {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 11px;
+
+    color: var(--accent);
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .project-card.small,
+    .project-card.medium,
+    .project-card.large {
+        grid-column: span 6;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .projects-header {
+        padding: 70px 0 60px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card.small,
+    .project-card.medium,
+    .project-card.large {
+        grid-column: span 1;
+    }
+
+    .project-title-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+}
+
+</style>
+
+
+<div class="projects-page">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="projects-header">
+
+        <div class="eyebrow">
+            ~ projects
+        </div>
+
+        <h1>
+            Things I've built.
+        </h1>
+
+        <p>
+            Security tooling, offensive security projects,
+            and software built for research and experimentation.
+        </p>
+
+    </header>
+
+
+    <!-- =====================================================
+         PROJECT GRID
+    ====================================================== -->
+
+    <section class="project-grid" id="projects-grid">
+
+
+        <!-- =================================================
+             TIBANEC2
+        ================================================== -->
+
+        <article class="project-card">
+
+            <div class="project-image">
+
+                <img
+                    src="{{ '/assets/images/tibaneC2.png' | relative_url }}"
+                    alt="TibaneC2 Framework"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div class="project-number">
+                    01
+                </div>
+
+
+                <div class="project-title-row">
+
+                    <h2>
+                        TibaneC2 Framework
+                    </h2>
+
+                </div>
+
+
+                <a
+                    class="star-badge"
+                    href="https://github.com/t1b4n3/TibaneC2"
+                    target="_blank"
+                    rel="noopener"
+                >
+
+                    <img
+                        src="https://img.shields.io/github/stars/t1b4n3/TibaneC2?style=flat-square&color=6c63ff"
+                        alt="GitHub stars"
+                    >
+
+                </a>
+
+
+                <div class="project-tags">
+
+                    <span>C/C++</span>
+                    <span>Red Teaming</span>
+                    <span>C2</span>
+                    <span>Security Research</span>
+
+                </div>
+
+
+                <p class="project-description">
+
+                    A modular command and control framework
+                    designed for red team operations and security
+                    research, with an emphasis on extensibility
+                    and operational security.
+
+                </p>
+
+
+                <div class="project-components">
+
+                    <div class="project-component">
+
+                        <span>01</span>
+                        Core Server
+
+                    </div>
+
+                    <div class="project-component">
+
+                        <span>02</span>
+                        Lightweight Implant
+
+                    </div>
+
+                    <div class="project-component">
+
+                        <span>03</span>
+                        CLI Interface
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    class="project-link"
+                    href="https://github.com/t1b4n3/TibaneC2"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View Project →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             PWNTRACE
+        ================================================== -->
+
+        <article class="project-card">
+
+            <div class="project-image">
+
+                <img
+                    src="{{ '/assets/images/pwntrace.png' | relative_url }}"
+                    alt="pwntrace"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="project-info">
+
+                <div class="project-number">
+                    02
+                </div>
+
+
+                <div class="project-title-row">
+
+                    <h2>
+                        pwntrace
+                    </h2>
+
+                </div>
+
+
+                <a
+                    class="star-badge"
+                    href="https://github.com/t1b4n3/pwntrace"
+                    target="_blank"
+                    rel="noopener"
+                >
+
+                    <img
+                        src="https://img.shields.io/github/stars/t1b4n3/pwntrace?style=flat-square&color=6c63ff"
+                        alt="GitHub stars"
+                    >
+
+                </a>
+
+
+                <div class="project-tags">
+
+                    <span>C++</span>
+                    <span>Exploit Development</span>
+                    <span>Reverse Engineering</span>
+                    <span>Linux</span>
+
+                </div>
+
+
+                <p class="project-description">
+
+                    A syscall tracing and control tool designed
+                    to accelerate exploit development, reverse
+                    engineering, and security research.
+
+                </p>
+
+
+                <div class="project-components">
+
+                    <div class="project-component">
+
+                        <span>01</span>
+                        Syscall Tracing
+
+                    </div>
+
+                    <div class="project-component">
+
+                        <span>02</span>
+                        Syscall Control
+
+                    </div>
+
+                    <div class="project-component">
+
+                        <span>03</span>
+                        Trace Analysis
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    class="project-link"
+                    href="https://github.com/t1b4n3/pwntrace"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View Repository →
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+</div>
+
+
+<script>
+
+/*
+ * =========================================================
+ * RANDOM PROJECT LAYOUT
+ * =========================================================
+ *
+ * The project order NEVER changes.
+ *
+ * 01 remains first
+ * 02 remains second
+ * 03 remains third
+ *
+ * Only the visual size/position changes.
+ */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const grid =
+        document.getElementById("projects-grid");
+
+    if (!grid) {
+        return;
+    }
+
+
+    const cards =
+        Array.from(
+            grid.querySelectorAll(".project-card")
+        );
+
+
+    /*
+     * Different visual compositions.
+     *
+     * Each array corresponds to:
+     *
+     * [project 01, project 02, project 03, ...]
+     */
+
+    const layouts = [
+
+        [
+            "large",
+            "small"
+        ],
+
+        [
+            "small",
+            "large"
+        ],
+
+        [
+            "medium",
+            "medium"
+        ]
+
+    ];
+
+
+    /*
+     * Select a random composition.
+     */
+
+    const layout =
+        layouts[
+            Math.floor(
+                Math.random() * layouts.length
+            )
+        ];
+
+
+    /*
+     * Apply the composition.
+     */
+
+    cards.forEach((card, index) => {
+
+        card.classList.remove(
+            "small",
+            "medium",
+            "large"
+        );
+
+
+        card.classList.add(
+            layout[index % layout.length]
+        );
+
+    });
+
+});
+
+</script>

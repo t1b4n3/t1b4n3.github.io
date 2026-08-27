@@ -5,7 +5,6 @@ description:
 date: 2025-04-23
 categories:
   - writeup
-  - pwn
 tags:
   - protostar-stack
 ---

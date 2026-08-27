@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<article class="post">
+
+    <header class="post-header">
+
+        {% if page.cve %}
+        <div class="post-cve">
+            {{ page.cve }}
+        </div>
+        {% endif %}
+
+        <h1>{{ page.title }}</h1>
+
+        <div class="post-meta">
+            {{ page.date | date: "%Y-%m-%d" }}
+
+            {% if page.tags %}
+                · {{ page.tags | join: " · " }}
+            {% endif %}
+        </div>
+
+    </header>
+
+    <div class="post-meta">
+
+    <span>
+        {{ post.date | date: "%b %d, %Y" }}
+    </span>
+
+    <span>·</span>
+
+    <span>
+        {% assign words = content | number_of_words %}
+        {% assign minutes = words | divided_by: 200 %}
+
+        {% if minutes < 1 %}
+            1 min read
+        {% else %}
+            {{ minutes }} min read
+        {% endif %}
+    </span>
+
+</div>
+
+    {% if page.image %}
+    <figure class="post-hero">
+        <img
+            src="{{ page.image | relative_url }}"
+            alt="{{ page.title }}"
+        >
+    </figure>
+    {% endif %}
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+</article>

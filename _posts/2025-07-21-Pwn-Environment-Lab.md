@@ -3,7 +3,7 @@ layout: post
 title: " Pwn & Reverse Engineering Lab with Docker"
 date: 2025-07-23
 categories:
-  - pwn
+  - writeup
 tag: pwn-env
 ---
 ## Building a Reproducible Pwn & Reverse Engineering Lab with Docker

@@ -5,7 +5,6 @@ description:
 date: 2025-07-28
 categories:
   - writeup
-  - pwn
 tags:
   - stack
 ---
