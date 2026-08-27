@@ -166,10 +166,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "317a8dac8624e26f",
+  "active": "6676fa631e0b54d4",
   "lastOpenFiles": [
-    "writeups/index.html",
-    "writeups",
     "_site/assets/images/writeups/nexhunt/ghost_note/shell.png",
     "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/shell.png",
@@ -180,6 +178,7 @@
     "_site/assets/images/writeups/qnqsec/offset3.png",
     "_site/assets/images/writeups/qnqsec/check_canary.png",
     "_site/assets/images/writeups/qnqsec/canary.png",
+    "_site/assets/images/writeups/qnqsec/about_file.png",
     "_site/assets/images/writeups/nexhunt/ghost_note",
     "_site/assets/images/writeups/nexhunt/archive_keeper",
     "_site/assets/images/pwn/tcache/Untitled.md",
@@ -189,7 +188,8 @@
     "_site/research/cve-analysis/RCA-CVE-2024-22857/index.html",
     "_site/research/cve-analysis/RCA-CVE-2017-14493/index.html",
     "_site/research/cve-analysis/CVE-2025-53630/index.html",
-    "_site/notes/uninitialized-data-access/UDA/index.html",
+    "_site/assets/images/writeups/qnqsec",
+    "_site/assets/images/writeups/pascalctf",
     "_posts/2026-12-30-debugging_and_exploiting multi-threaded applications..md",
     "_posts/2026-12-22-Heap Exploitation Targets.md",
     "_posts/2026-12-15-type-confusion.md",
