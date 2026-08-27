@@ -7,7 +7,7 @@ categories:
   - writeup
   - pwn
 tags:
-image: /assets/images/writeups/pascal.png
+image: /assets/images/pascal.png
 ---
 # YET ANOTHER NOTE TAKER
 

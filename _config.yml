@@ -5,9 +5,13 @@ url: "https://t1b4n3.github.io"
 markdown: kramdown
 highlighter: rouge
 
+
 permalink: /:categories/:title/
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+plugins:
+  - jekyll-feed

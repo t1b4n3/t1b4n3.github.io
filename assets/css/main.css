@@ -645,22 +645,24 @@ main {
 }
 
 
-
 /* =========================
-   CODE
+   CODE BLOCKS
 ========================= */
 
 .post-content pre {
+    position: relative;
 
     overflow-x: auto;
 
-    padding: 20px;
+    margin: 32px 0;
 
-    margin: 30px 0;
+    padding: 20px 22px;
 
-    background: var(--surface);
+    background: #0d0d0d;
 
     border: 1px solid var(--border);
+
+    border-radius: 4px;
 
     font-family: "JetBrains Mono", monospace;
 
@@ -668,27 +670,403 @@ main {
 
     line-height: 1.7;
 
+    tab-size: 4;
+
+    -webkit-overflow-scrolling: touch;
 }
 
-.post-content code {
+.post-content pre code {
+    display: block;
+
+    padding: 0;
+
+    background: none;
+
+    border: none;
 
     font-family: "JetBrains Mono", monospace;
 
-    font-size: 0.9em;
+    font-size: inherit;
 
+    line-height: inherit;
 }
 
+
+/* Inline code */
+
 .post-content :not(pre) > code {
+
+    padding: 2px 5px;
 
     background: var(--surface);
 
     border: 1px solid var(--border);
 
-    padding: 2px 5px;
+    border-radius: 3px;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 0.88em;
 
 }
 
 
+/* =========================
+   CODE LANGUAGE LABEL
+========================= */
+/* =========================
+   ROUGE SYNTAX HIGHLIGHTING
+========================= */
+
+.highlight {
+    margin: 32px 0;
+}
+
+.highlight pre {
+    margin: 0;
+}
+
+
+/* Comments */
+
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+    color: #6a737d;
+}
+
+
+/* Keywords */
+
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+    color: #ff7b72;
+}
+
+
+/* Strings */
+
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s1,
+.highlight .s2 {
+    color: #a5d6ff;
+}
+
+
+/* Numbers */
+
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+    color: #79c0ff;
+}
+
+
+/* Functions */
+
+.highlight .nf {
+    color: #d2a8ff;
+}
+
+
+/* Variables */
+
+.highlight .nv {
+    color: #ffa657;
+}
+
+
+/* Types */
+
+.highlight .nc,
+.highlight .nn {
+    color: #ffa657;
+}
+
+
+/* Operators */
+
+.highlight .o,
+.highlight .ow {
+    color: #ff7b72;
+}
+
+
+/* Constants */
+
+.highlight .no {
+    color: #79c0ff;
+}
+
+
+/* Preprocessor */
+
+.highlight .cp {
+    color: #ff7b72;
+}
+
+
+/* Built-ins */
+
+.highlight .nb {
+    color: #79c0ff;
+}
+
+.code-block {
+    position: relative;
+
+    margin: 32px 0;
+}
+
+.code-language {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    padding: 7px 12px;
+
+    color: var(--muted);
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+
+}
+
+/* =========================
+   CODE BLOCK
+========================= */
+
+.code-block {
+    position: relative;
+
+    margin: 32px 0;
+
+    background: #0d0d0d;
+
+    border: 1px solid var(--border);
+
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   PRE
+========================= */
+
+.code-block pre {
+    display: flex;
+
+    overflow-x: auto;
+
+    margin: 0;
+
+    padding: 20px 0;
+
+    background: transparent;
+
+    border: none;
+
+    border-radius: 0;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   LINE NUMBERS
+========================= */
+
+.line-numbers {
+
+    flex-shrink: 0;
+
+    width: 45px;
+
+    padding-right: 15px;
+
+    text-align: right;
+
+    user-select: none;
+
+    color: #444;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    border-right: 1px solid var(--border);
+
+}
+
+
+.line-numbers span {
+
+    display: block;
+
+}
+
+
+/* =========================
+   CODE
+========================= */
+
+.code-with-lines {
+
+    display: block;
+
+    padding-left: 18px;
+
+    min-width: max-content;
+
+}
+
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.code-language {
+
+    position: absolute;
+
+    top: 7px;
+
+    left: 58px;
+
+    z-index: 2;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    color: var(--muted);
+
+}
+
+
+/* =========================
+   COPY
+========================= */
+
+.copy-code {
+
+    position: absolute;
+
+    top: 7px;
+
+    right: 7px;
+
+    z-index: 2;
+
+    padding: 5px 9px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+
+.copy-code:hover {
+
+    color: var(--text);
+
+    border-color: var(--accent);
+
+}
+
+/* =========================
+   COPY BUTTON
+========================= */
+
+.copy-code {
+
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    padding: 5px 9px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 9px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.copy-code:hover {
+
+    color: var(--text);
+
+    border-color: var(--accent);
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .post-content pre {
+
+        padding: 16px;
+
+        font-size: 11px;
+
+    }
+
+}
 /* =========================
    FOOTER
 ========================= */
@@ -1354,4 +1732,15 @@ footer {
     font-weight: 600;
 
     font-family: "Fira Code", monospace;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.footer-links a:hover {
+    color: var(--text);
 }

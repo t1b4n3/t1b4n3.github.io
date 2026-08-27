@@ -168,6 +168,7 @@
   },
   "active": "6676fa631e0b54d4",
   "lastOpenFiles": [
+    "_site/deploy.sh",
     "_site/assets/images/writeups/nexhunt/ghost_note/shell.png",
     "_site/assets/images/writeups/nexhunt/ghost_note/ghostnote.png",
     "_site/assets/images/writeups/nexhunt/archive_keeper/shell.png",
@@ -178,7 +179,6 @@
     "_site/assets/images/writeups/qnqsec/offset3.png",
     "_site/assets/images/writeups/qnqsec/check_canary.png",
     "_site/assets/images/writeups/qnqsec/canary.png",
-    "_site/assets/images/writeups/qnqsec/about_file.png",
     "_site/assets/images/writeups/nexhunt/ghost_note",
     "_site/assets/images/writeups/nexhunt/archive_keeper",
     "_site/assets/images/pwn/tcache/Untitled.md",

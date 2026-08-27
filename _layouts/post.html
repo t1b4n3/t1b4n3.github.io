@@ -4,6 +4,10 @@ layout: default
 
 <article class="post">
 
+    <!-- =====================================================
+         POST HEADER
+    ====================================================== -->
+
     <header class="post-header">
 
         {% if page.cve %}
@@ -12,50 +16,420 @@ layout: default
         </div>
         {% endif %}
 
-        <h1>{{ page.title }}</h1>
+        <h1>
+            {{ page.title }}
+        </h1>
 
         <div class="post-meta">
-            {{ page.date | date: "%Y-%m-%d" }}
+
+            <span>
+                {{ page.date | date: "%Y-%m-%d" }}
+            </span>
 
             {% if page.tags %}
-                · {{ page.tags | join: " · " }}
+                <span>·</span>
+
+                <span>
+                    {{ page.tags | join: " · " }}
+                </span>
             {% endif %}
+
+            <span>·</span>
+
+            {% assign words = content | number_of_words %}
+            {% assign minutes = words | divided_by: 200 %}
+
+            <span>
+                {% if minutes < 1 %}
+                    1 min read
+                {% else %}
+                    {{ minutes }} min read
+                {% endif %}
+            </span>
+
         </div>
 
     </header>
 
-    <div class="post-meta">
 
-    <span>
-        {{ post.date | date: "%b %d, %Y" }}
-    </span>
-
-    <span>·</span>
-
-    <span>
-        {% assign words = content | number_of_words %}
-        {% assign minutes = words | divided_by: 200 %}
-
-        {% if minutes < 1 %}
-            1 min read
-        {% else %}
-            {{ minutes }} min read
-        {% endif %}
-    </span>
-
-</div>
+    <!-- =====================================================
+         HERO IMAGE
+    ====================================================== -->
 
     {% if page.image %}
+
     <figure class="post-hero">
+
         <img
             src="{{ page.image | relative_url }}"
             alt="{{ page.title }}"
         >
+
+        {% if page.image_caption %}
+        <figcaption>
+            {{ page.image_caption }}
+        </figcaption>
+        {% endif %}
+
     </figure>
+
     {% endif %}
 
+
+    <!-- =====================================================
+         POST CONTENT
+    ====================================================== -->
+
     <div class="post-content">
+
         {{ content }}
+
     </div>
 
 </article>
+
+
+<!-- =========================================================
+     CODE BLOCK SYSTEM
+========================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const blocks =
+        document.querySelectorAll(
+            ".post-content pre"
+        );
+
+
+    blocks.forEach(function (pre) {
+
+        const code =
+            pre.querySelector("code");
+
+
+        if (!code) {
+            return;
+        }
+
+
+        /*
+         * Prevent duplicate processing
+         */
+
+        if (pre.dataset.processed) {
+            return;
+        }
+
+        pre.dataset.processed = "true";
+
+
+        /* =================================================
+           FIND LANGUAGE
+        ================================================= */
+
+        let language = "";
+
+
+        /*
+         * Rouge / Kramdown normally generates:
+
+         <div class="language-c highlighter-rouge">
+
+             <div class="highlight">
+
+                 <pre>
+                     <code>
+                     ...
+                     </code>
+                 </pre>
+
+             </div>
+
+         </div>
+        */
+
+
+        const rougeContainer =
+            pre.closest(
+                ".highlighter-rouge"
+            );
+
+
+        if (rougeContainer) {
+
+            const classes =
+                Array.from(
+                    rougeContainer.classList
+                );
+
+
+            const languageClass =
+                classes.find(
+                    function (className) {
+
+                        return className
+                            .startsWith(
+                                "language-"
+                            );
+
+                    }
+                );
+
+
+            if (languageClass) {
+
+                language =
+                    languageClass.replace(
+                        "language-",
+                        ""
+                    );
+
+            }
+
+        }
+
+
+        /*
+         * Fallback:
+         * check the <code> element
+         */
+
+        if (!language) {
+
+            const codeClasses =
+                Array.from(
+                    code.classList
+                );
+
+
+            const codeLanguage =
+                codeClasses.find(
+                    function (className) {
+
+                        return className
+                            .startsWith(
+                                "language-"
+                            );
+
+                    }
+                );
+
+
+            if (codeLanguage) {
+
+                language =
+                    codeLanguage.replace(
+                        "language-",
+                        ""
+                    );
+
+            }
+
+        }
+
+
+        /* =================================================
+           CREATE WRAPPER
+        ================================================= */
+
+        const wrapper =
+            document.createElement(
+                "div"
+            );
+
+
+        wrapper.className =
+            "code-block";
+
+
+        /*
+         * Insert wrapper before <pre>
+         */
+
+        pre.parentNode.insertBefore(
+            wrapper,
+            pre
+        );
+
+
+        /*
+         * Move <pre> into wrapper
+         */
+
+        wrapper.appendChild(
+            pre
+        );
+
+
+        /* =================================================
+           LANGUAGE LABEL
+        ================================================= */
+
+        if (language) {
+
+            const label =
+                document.createElement(
+                    "span"
+                );
+
+
+            label.className =
+                "code-language";
+
+
+            label.textContent =
+                language;
+
+
+            wrapper.appendChild(
+                label
+            );
+
+        }
+
+
+        /* =================================================
+           COPY BUTTON
+        ================================================= */
+
+        const copyButton =
+            document.createElement(
+                "button"
+            );
+
+
+        copyButton.className =
+            "copy-code";
+
+
+        copyButton.type =
+            "button";
+
+
+        copyButton.textContent =
+            "COPY";
+
+
+        copyButton.addEventListener(
+            "click",
+            async function () {
+
+                try {
+
+                    await navigator
+                        .clipboard
+                        .writeText(
+                            code.textContent
+                        );
+
+
+                    copyButton.textContent =
+                        "COPIED";
+
+
+                    setTimeout(
+                        function () {
+
+                            copyButton.textContent =
+                                "COPY";
+
+                        },
+                        1500
+                    );
+
+
+                } catch (error) {
+
+                    copyButton.textContent =
+                        "ERROR";
+
+                }
+
+            }
+        );
+
+
+        wrapper.appendChild(
+            copyButton
+        );
+
+
+        /* =================================================
+           LINE NUMBERS
+        ================================================= */
+
+        const text =
+            code.textContent;
+
+
+        const lines =
+            text.split("\n");
+
+
+        /*
+         * Remove the final empty line
+         * created by Markdown
+         */
+
+        if (
+            lines.length > 1 &&
+            lines[lines.length - 1] === ""
+        ) {
+
+            lines.pop();
+
+        }
+
+
+        const lineNumbers =
+            document.createElement(
+                "div"
+            );
+
+
+        lineNumbers.className =
+            "line-numbers";
+
+
+        lines.forEach(
+            function (_, index) {
+
+                const number =
+                    document.createElement(
+                        "span"
+                    );
+
+
+                number.textContent =
+                    index + 1;
+
+
+                lineNumbers.appendChild(
+                    number
+                );
+
+            }
+        );
+
+
+        /*
+         * Put numbers before the code
+         */
+
+        pre.insertBefore(
+            lineNumbers,
+            code
+        );
+
+
+        code.classList.add(
+            "code-with-lines"
+        );
+
+    });
+
+});
+
+</script>
