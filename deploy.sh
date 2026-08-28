@@ -9,21 +9,16 @@ COMMIT_MSG="Deploying notes and blog updates: $(date +'%Y-%m-%d %H:%M:%S')"
 
 # Exit immediately on error
 set -e
-
-echo "📝 Committing content to main branch..."
 git add .
-git commit -m "update" || echo "🟡 Nothing to commit on main"
+git commit -m "update" 
 git push origin main
 
-echo "📦 Building site with Jekyll..."
 bundle exec jekyll build
-
-echo "🚀 Deploying to $BRANCH branch..."
+npx pagefind --site _site
 
 cd "$BUILD_DIR"
 
 if [ -d .git ]; then
-  echo "🧹 Cleaning up existing git repo in $BUILD_DIR..."
   rm -rf .git
 fi
 
@@ -37,10 +32,4 @@ git add .
 git commit -m "$COMMIT_MSG"
 git push -f origin "$BRANCH"
 
-cd ..
-
-# Clean the Jekyll build cache
-echo "🧼 Cleaning build cache..."
 bundle exec jekyll clean
-
-echo "✅ Deployed successfully to GitHub Pages on '$BRANCH' branch!"
