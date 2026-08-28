@@ -1709,3 +1709,536 @@ footer {
 .footer-links a:hover {
     color: var(--text);
 }
+
+
+
+
+
+
+/* =========================
+   RELATED POSTS
+========================= */
+
+.related-posts {
+
+    margin-top: 100px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.related-posts .section-title {
+
+    margin-bottom: 25px;
+
+}
+
+
+.related-post-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1px;
+
+    background: var(--border);
+
+}
+
+
+.related-post {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 210px;
+
+    padding: 22px;
+
+    background: var(--surface);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.related-post:hover {
+
+    background: #151515;
+
+    transform: translateY(-3px);
+
+}
+
+
+.related-post-meta {
+
+    font-family:
+        "JetBrains Mono",
+        monospace;
+
+    font-size: 9px;
+
+    color: var(--muted);
+
+}
+
+
+.related-post h3 {
+
+    margin: 18px 0 10px;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+
+    font-weight: 500;
+
+}
+
+
+.related-post p {
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+}
+
+
+.related-arrow {
+
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    color: var(--accent);
+
+    font-family:
+        "JetBrains Mono",
+        monospace;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .related-post-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+
+/*
+
+#######
+*/
+
+
+/* =========================
+   POST LAYOUT
+========================= */
+
+.post-layout {
+    position: relative;
+}
+
+
+/* =========================
+   TABLE OF CONTENTS
+========================= */
+
+.post-toc {
+
+    position: sticky;
+
+    top: 40px;
+
+    width: 180px;
+
+    margin-left: -230px;
+
+    margin-bottom: -100%;
+
+    float: left;
+
+}
+
+
+.toc-title {
+
+    margin-bottom: 18px;
+
+    font-family:
+        "JetBrains Mono",
+        monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 0.08em;
+
+    color: var(--muted);
+
+}
+
+
+#toc {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+#toc a {
+
+    display: block;
+
+    padding: 4px 0 4px 12px;
+
+    border-left: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-family:
+        "JetBrains Mono",
+        monospace;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+#toc a:hover {
+
+    color: var(--text);
+
+}
+
+
+#toc a.active {
+
+    color: var(--accent);
+
+    border-left-color: var(--accent);
+
+}
+
+
+#toc a.toc-h3 {
+
+    padding-left: 24px;
+
+    font-size: 9px;
+
+    opacity: 0.8;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .post-toc {
+
+        position: relative;
+
+        top: auto;
+
+        width: 100%;
+
+        margin: 0 0 40px;
+
+        float: none;
+
+        padding: 20px;
+
+        border: 1px solid var(--border);
+
+        background: var(--surface);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+.back-to-top {
+
+    position: fixed;
+
+    right: 30px;
+
+    bottom: 30px;
+
+    z-index: 1000;
+
+    padding: 9px 12px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    font-family:
+        "JetBrains Mono",
+        monospace;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.back-to-top.visible {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+
+}
+
+
+.back-to-top:hover {
+
+    color: var(--accent);
+
+    border-color: var(--accent);
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .back-to-top {
+
+        right: 18px;
+
+        bottom: 18px;
+
+        padding: 8px 10px;
+
+    }
+
+}
+
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-page {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+
+
+.search-header {
+
+    padding: 100px 0 60px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.search-header h1 {
+
+    margin: 0;
+
+    font-size:
+        clamp(48px, 7vw, 80px);
+
+    line-height: 1;
+
+    letter-spacing: -0.04em;
+
+}
+
+
+.search-header p {
+
+    max-width: 600px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+}
+
+
+.search-container {
+
+    padding: 50px 0 120px;
+
+}
+
+
+/* =========================
+   PAGEFIND
+========================= */
+
+#search {
+
+    --pagefind-ui-scale: 1;
+
+    --pagefind-ui-primary:
+        var(--accent);
+
+    --pagefind-ui-text:
+        var(--text);
+
+    --pagefind-ui-background:
+        var(--surface);
+
+    --pagefind-ui-border:
+        var(--border);
+
+    --pagefind-ui-tag:
+        var(--muted);
+
+}
+
+
+#search .pagefind-ui__search-input {
+
+    height: 55px;
+
+    border:
+        1px solid var(--border);
+
+    background:
+        var(--surface);
+
+    color:
+        var(--text);
+
+    font-family:
+        "JetBrains Mono",
+        monospace;
+
+    font-size: 13px;
+
+}
+
+
+#search .pagefind-ui__search-input:focus {
+
+    border-color:
+        var(--accent);
+
+    outline: none;
+
+}
+
+
+#search .pagefind-ui__result {
+
+    padding: 25px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+#search .pagefind-ui__result-link {
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+}
+
+
+#search .pagefind-ui__result-excerpt {
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+#search mark {
+
+    background:
+        transparent;
+
+    color:
+        var(--accent);
+
+}

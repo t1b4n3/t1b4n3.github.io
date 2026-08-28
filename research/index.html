@@ -27,15 +27,19 @@ title: Research
 
         <a href="{{ post.url | relative_url }}">
 
-            <div class="post-card-image">
+            {% if post.image %}
 
-                <img
-                    src="{{ post.image | default: '/assets/images/post_default.jpeg' | relative_url }}"
-                    alt="{{ post.title }}"
-                    loading="lazy"
-                >
+<div class="post-card-image">
 
-            </div>
+    <img
+        src="{{ post.image | relative_url }}"
+        alt="{{ post.title }}"
+        loading="lazy"
+    >
+
+</div>
+
+{% endif %}
 
 
             <div class="post-card-content">

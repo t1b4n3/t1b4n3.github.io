@@ -1,0 +1,56 @@
+---
+layout: default
+title: Search
+---
+
+<main class="search-page">
+
+    <header class="search-header">
+
+        <div class="eyebrow">
+            // SEARCH
+        </div>
+
+        <h1>
+            Search
+        </h1>
+
+        <p>
+            Search research, writeups, projects and technical notes.
+        </p>
+
+    </header>
+
+
+    <section class="search-container">
+
+        <div id="search"></div>
+
+    </section>
+
+</main>
+
+
+<link
+    href="{{ '/pagefind/pagefind-ui.css' | relative_url }}"
+    rel="stylesheet"
+>
+
+
+<script src="{{ '/pagefind/pagefind-ui.js' | relative_url }}"></script>
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        new PagefindUI({
+            element: "#search",
+            showSubResults: true
+        });
+
+    }
+);
+
+</script>
