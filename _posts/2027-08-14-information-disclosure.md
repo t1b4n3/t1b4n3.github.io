@@ -2,7 +2,7 @@
 layout: post
 title: Information Disclosure in Software Exploitation.
 description:
-date: 2026-08-14
+date: 2027-08-14
 categories:
   - Notes
   - heap-exploitation
