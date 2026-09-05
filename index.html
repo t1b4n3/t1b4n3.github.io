@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>
+        
+            Home — t1b4n3
+        
+    </title>
+
+    <meta name="description"
+          content="Offensive Security Researcher">
+
+    <link rel="stylesheet"
+          href="/assets/css/main.css">
+
+
+          <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8XVFJ9KM9"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-W8XVFJ9KM9');
+</script>
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+    <a class="logo"
+       href="/">
+        t1b4n3
+    </a>
+
+    <nav>
+
+        <a href="/research/">
+            research
+        </a>
+
+
+        <a href="/writeups/">
+            writeups
+        </a>
+
+        <a href="/projects/">
+            projects
+        </a>
+
+         <a href="/assets/resume.pdf"> resume </a>
+
+        <a href="/search/">search</a>
+
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <style>
+
+/* =========================================================
+   HOME
+========================================================= */
+
+.home {
+    padding-bottom: 120px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.home-hero {
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 100px 0 80px;
+}
+
+.home-eyebrow {
+    margin-bottom: 25px;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 11px;
+
+    color: var(--accent);
+}
+
+.home-hero h1 {
+    max-width: 1000px;
+
+    margin: 0;
+
+    font-size: clamp(48px, 8vw, 100px);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.055em;
+}
+
+.home-hero h1 span {
+    color: var(--muted);
+}
+
+.home-intro {
+    max-width: 650px;
+
+    margin-top: 35px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.home-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 35px;
+}
+
+.home-link {
+    padding: 9px 13px;
+
+    border: 1px solid var(--border);
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 11px;
+
+    color: var(--text);
+
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.home-link:hover {
+    color: var(--accent);
+
+    border-color: var(--accent);
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.home-section {
+    padding: 80px 0;
+
+    border-top: 1px solid var(--border);
+}
+
+.home-section-label {
+    margin-bottom: 30px;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 11px;
+
+    color: var(--accent);
+}
+
+.home-section h2 {
+    max-width: 800px;
+
+    margin: 0;
+
+    font-size: clamp(32px, 5vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -0.035em;
+}
+
+.home-section p {
+    max-width: 700px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   FOCUS AREAS
+========================================================= */
+
+.focus-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 1px;
+
+    margin-top: 50px;
+
+    border: 1px solid var(--border);
+
+    background: var(--border);
+}
+
+.focus-item {
+
+    padding: 30px;
+
+    background: var(--surface);
+}
+
+.focus-number {
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 10px;
+
+    color: var(--accent);
+
+    margin-bottom: 20px;
+}
+
+.focus-item h3 {
+
+    margin: 0;
+
+    font-size: 18px;
+
+}
+
+.focus-item p {
+
+    margin-top: 12px;
+
+    font-size: 13px;
+
+}
+
+/* =========================================================
+   EXPLORE / CTA
+========================================================= */
+
+.home-cta {
+
+    padding: 80px 0 0;
+
+    border-top: 1px solid var(--border);
+
+}
+
+.home-cta-header {
+
+    margin-bottom: 40px;
+
+}
+
+.home-cta-header .home-section-label {
+
+    margin-bottom: 20px;
+
+}
+
+.home-cta-header h2 {
+
+    margin: 0;
+
+    font-size: clamp(32px, 5vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+/* =========================================================
+   CTA GRID
+========================================================= */
+
+.home-cta-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+}
+
+
+/* =========================================================
+   CTA CARD
+========================================================= */
+
+.home-cta-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 240px;
+
+    padding: 25px;
+
+    border: 1px solid var(--border);
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+.home-cta-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--accent);
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.home-cta-number {
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 10px;
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.home-cta-card h3 {
+
+    margin: 0 0 10px;
+
+    font-size: 24px;
+
+    letter-spacing: -0.02em;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.home-cta-card p {
+
+    max-width: 300px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.home-cta-arrow {
+
+    position: absolute;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    font-family: "JetBrains Mono", monospace;
+
+    font-size: 16px;
+
+    color: var(--accent);
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .home-cta-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .home-cta-card {
+
+        min-height: 200px;
+
+    }
+
+}
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .home-hero {
+
+        min-height: 70vh;
+
+        padding: 70px 0;
+    }
+
+    .focus-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .home-cta {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+}
+
+</style>
+
+
+<main class="home">
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="home-hero">
+
+        <div class="home-eyebrow">
+            ~ offensive security · research · engineering
+        </div>
+
+
+        <h1>
+            Offensive security
+            <span>&amp; vulnerability research.</span>
+        </h1>
+
+
+        <p class="home-intro">
+            I'm Nkateko Tibane (t1b4n3), an Offensive Security enthusiast heavily focused on 
+            vulnerability research, exploit development, and red teaming.
+        </p>
+
+
+        <div class="home-links">
+
+            <a
+                class="home-link"
+                href="/research/"
+            >
+                Research →
+            </a>
+
+            <a
+                class="home-link"
+                href="/writeups/"
+            >
+                Writeups →
+            </a>
+
+            <a
+                class="home-link"
+                href="/projects/"
+            >
+                Projects →
+            </a>
+
+            <a class="home-link" href="/assets/resume.pdf"> Resume → </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section class="home-section">
+
+        <div class="home-section-label">
+            ~ about
+        </div>
+
+
+        <h2>
+        About Me
+        </h2>
+
+
+        <p>
+            My main interests are offensive security,
+            vulnerability research, exploit development,
+            reverse engineering and low-level systems.
+            I enjoy taking software apart, understanding
+            its internals and turning bugs into a deeper
+            understanding of the underlying system.
+        </p>
+
+
+        <p>
+            Alongside research, I build security tooling
+            and document what I learn through technical
+            writeups and vulnerability research.
+        </p>
+
+
+          <p>
+    If you have any questions about my blog, feel free to reach out.
+    If you have interesting research in linux userland / kernel VR, I’m down for anything as long as it’s remote or in South Africa.
+    (<a class=href="/assets/resume.pdf">my resume</a>).
+  </p>
+
+
+
+  <ul>
+    <li>I do CTFs for <a href="https://deadpiratesociety.club/">Dead Pirate Society</a>, and work on challenges in
+    <strong>pwn and kernel exploitation</strong>.</li>
+  
+    <li>Currently, I’m an Information Technology student at <strong>Richfield</strong>.</li>
+  </ul>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOCUS
+    ====================================================== -->
+
+    <section class="home-section">
+
+        <div class="home-section-label">
+            ~ focus
+        </div>
+
+
+        <div class="focus-grid">
+
+
+            <div class="focus-item">
+
+                <div class="focus-number">
+                    01
+                </div>
+
+                <h3>
+                    Offensive Security
+                </h3>
+
+                <p>
+                    Red teaming, penetration testing,
+                    exploitation and security tooling.
+                </p>
+
+            </div>
+
+
+            <div class="focus-item">
+
+                <div class="focus-number">
+                    02
+                </div>
+
+                <h3>
+                    Vulnerability Research
+                </h3>
+
+                <p>
+                    Finding, reproducing and analysing
+                    vulnerabilities in real-world software.
+                </p>
+
+            </div>
+
+
+            <div class="focus-item">
+
+                <div class="focus-number">
+                    03
+                </div>
+
+                <h3>
+                    Exploit Development
+                </h3>
+
+                <p>
+                    Memory corruption, reverse engineering,
+                    exploitation and low-level systems.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+<!-- =====================================================
+     CTA
+====================================================== -->
+
+<section class="home-cta">
+
+    <div class="home-cta-header">
+
+        <div class="home-section-label">
+            ~ explore
+        </div>
+
+        <h2>
+            Explore the work.
+        </h2>
+
+    </div>
+
+
+    <div class="home-cta-grid">
+        <a
+            class="home-cta-card"
+            href="/research/"
+        >
+
+            <span class="home-cta-number">
+                01
+            </span>
+
+            <div>
+
+                <h3>
+                    Research
+                </h3>
+
+                <p>
+                    Vulnerability research, CVE analysis
+                    and security research.
+                </p>
+
+            </div>
+
+            <span class="home-cta-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <a
+            class="home-cta-card"
+            href="/writeups/"
+        >
+
+            <span class="home-cta-number">
+                02
+            </span>
+
+            <div>
+
+                <h3>
+                    Writeups
+                </h3>
+
+                <p>
+                    CTFs, exploitation, reverse engineering
+                    and technical experiments.
+                </p>
+
+            </div>
+
+            <span class="home-cta-arrow">
+                →
+            </span>
+
+        </a>
+
+
+        <a
+            class="home-cta-card"
+            href="/projects/"
+        >
+
+            <span class="home-cta-number">
+                03
+            </span>
+
+            <div>
+
+                <h3>
+                    Projects
+                </h3>
+
+                <p>
+                    Security tooling and projects I've
+                    built along the way.
+                </p>
+
+            </div>
+
+            <span class="home-cta-arrow">
+                →
+            </span>
+
+        </a>
+
+        <a class="home-cta-card" href="/assets/resume.pdf">
+                        <span class="home-cta-number">
+                04
+            </span>
+
+            <div>
+
+                <h3>
+                    Resume
+                </h3>
+
+                <p>
+                    Hire Me
+                </p>
+
+            </div>
+            <span class="home-cta-arrow">
+                →
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+</main>
+
+
+
+<footer>
+
+    <div>
+        © 2026 t1b4n3
+    </div>
+
+    <div class="footer-links">
+
+        <a href="mailto:nkatekotibane101@gmail.com">
+            Email
+        </a>
+
+        <a href="https://github.com/t1b4n3" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/nkatekotibane/" target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="/feed.xml">
+            RSS
+        </a>
+          </div>
+
+</a>
+</footer>
+
+
+<script src="/assets/js/main.js"></script>
+</body>
+
+</html>
+

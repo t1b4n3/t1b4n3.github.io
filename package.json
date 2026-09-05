@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "bundle exec jekyll build && pagefind --site _site"
+  },
+  "dev": "bundle exec jekyll serve",
+  "devDependencies": {
+    "pagefind": "^1.5.2"
+  }
+}

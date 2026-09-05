@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>
+        {% if page.title %}
+            {{ page.title }} — {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+
+    <meta name="description"
+          content="{{ site.description }}">
+
+    <link rel="stylesheet"
+          href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+
+<body>
+
+<header class="site-header">
+    <a class="logo" href="{{ '/' | relative_url }}">
+        t1b4n3
+    </a>
+
+    <nav>
+        <a href="{{ '/research/' | relative_url }}">research</a>
+        <a href="{{ '/projects/' | relative_url }}">projects</a>
+        <a href="{{ '/writeups/' | relative_url }}">writeups</a>
+        <a href="{{ '/about/' | relative_url }}">about</a>
+    </nav>
+</header>
+
+<main>
+    {{ content }}
+</main>
+
+<footer>
+    <span>t1b4n3</span>
+    <span>offensive security research</span>
+</footer>
+
+</body>
+</html>
