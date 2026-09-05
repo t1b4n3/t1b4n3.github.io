@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-09-05-CVE-2020-28022.md",
+                "file": "_posts/2026-09-07-CVE-2020-28022.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-05-CVE-2020-28022"
+              "title": "2026-09-07-CVE-2020-28022"
             }
           }
         ]
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2026-09-05-CVE-2020-28022.md",
+                "file": "_posts/2026-09-07-CVE-2020-28022.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -174,7 +174,7 @@
   "active": "317a8dac8624e26f",
   "lastOpenFiles": [
     "_posts/2026-04-16-CVE-2025-53630.md",
-    "_posts/2026-09-05-CVE-2020-28022.md",
+    "_posts/2026-09-07-CVE-2020-28022.md",
     "_posts/2026-11-01-bootloaders.md",
     "Untitled.md",
     "_posts/2026-12-15-type-confusion.md",
